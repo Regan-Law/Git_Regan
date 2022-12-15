@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="UTF-8">
+   <title>小米账号注册</title>
+   <link rel="icon" href="../images/logo.png"/>
+   <link rel="stylesheet" href="../css/user.css"/>
+</head>
+<body>
+   <div id="header">
+		
+	</div>
+   <div id="main">
+      <video  class="bg-video" src="../res/snow.mp4" autoplay loop muted></video>
+      <div class="container">
+         <div class="form-container">
+            <form id="form-register">
+               <div class="form-group">
+                  <label for="uname">用户名:</label>
+                  <input name="uname" id="uname"  minlength="6" maxlength="9" autofocus required type="text"/>
+                  <span  class="bg-default help-block">用户名可包含数字或字母</span>
+               </div>
+
+
+               <div class="form-group">
+                  <label for="upwd">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+                  <input name="upwd" id="upwd" type="password" minlength="6" autofocus required/>
+                  <span id="upwd-msg" class="bg-default help-block">密码长度在6~12位之间</span>
+               </div>
+               <div class="form-group">
+                  <label for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;箱:</label>
+                  <input name="email" id="email" type="email" autofocus/>
+                  <span id="email-msg" class="bg-default help-block">请输入合法邮箱格式</span>
+               </div>
+               <div class="form-group">
+                  <label for="age">年&nbsp;&nbsp;&nbsp;&nbsp;龄:</label>
+                  <input name="age" id="age" type="number" min="18" max="60" autofocus/>
+                  <span id="age-msg" class="bg-default help-block">年龄必须在18~60之间</span>
+               </div>
+               <div class="form-group">
+                  <label for="birthday">生&nbsp;&nbsp;&nbsp;&nbsp;日:</label>
+                  <input name="birthday" id="birthday" type="date" autofocus/>
+                  <span id="birthday-msg"  class="bg-default help-block" >请选择生日</span>
+               </div>
+               <div class="form-group btn-group">
+                  <input class="btn btn-success" type="submit" id="btn-submit" value="提交信息">
+                  <input class="btn btn-danger" type="reset" value="清空输入">
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div id="footer">
+
+   </div>
+   <script src="../js/jquery-1.11.3.js"></script>
+   <script src="../js/register.js"></script>
+</body>
+</html>

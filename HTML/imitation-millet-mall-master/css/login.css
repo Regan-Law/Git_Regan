@@ -1,0 +1,175 @@
+.body {
+    font-size: 16px;
+    font-family: '微软雅黑';
+}
+.login .lg-bk {
+    width: 375px;
+    height: 100%;
+    background: url(../img/login-banner.jpg) no-repeat 0 0/100% 100%;
+    position: fixed;
+}
+.login-content{
+    width: 100%;
+    height: 100%;
+    padding-left: 375px;
+    box-sizing: border-box;
+    position: relative;
+}
+.header{
+    padding: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.hl .img{
+    background: url(../img/header-logo-mi.png) no-repeat 0/40px 40px;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.hl span{
+    height: 40px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #333;
+    margin-left: 10px;
+    float: left;
+}
+.min-nav {
+    width: 355px;
+    height: 40px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+}
+
+.min-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+}
+.min-nav a:hover{
+    color: orange;
+}
+
+.min-nav span:nth-child(3) a {
+    padding-right: 20px;
+    border-right: 1px solid #838383;
+}
+.login-card-wrap{
+    padding-top: 88px;
+}
+.login-choice a:nth-child(1){
+    font-size: 22px;
+    color: #333;
+    border-bottom: 4px solid #ff5c00;
+}
+.login-choice a:nth-child(2){
+        font-size: 22px;
+        color: #bbb;
+        margin-left: 20px;
+}
+.login-card{
+    height: 627px;
+    width: 450px;
+    margin: 0 auto 80px;
+    padding: 40px 45px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
+}
+.mi-form{
+    padding: 20px 2px 0;
+}
+.mi-form .input-id{
+    width: 356px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 17px;
+    color: #333;
+    line-height: 20px;
+    background: rgba(165, 165, 170, 0.1);
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.mi-form .input-psd{
+    width: 356px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 17px;
+    color: #333;
+    line-height: 20px;
+    background: rgba(165, 165, 170, 0.1);
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.mi-form .input-sub{
+    width: 356px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 20px; 
+    color: #fff;
+    background-color: #ff5c00;
+    border-radius: 4px;
+}
+.login-card .help{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 115px;
+}
+.help a{
+    color: #ff5c00;
+    font-size: 14px;
+}
+.login-ortherway{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #aaa;
+    line-height: 40px;
+}
+.login-ortherway .title{
+    padding-bottom: 10px;
+}
+
+.login-list i{
+    font-size: 46px;
+    margin: 0 12px;
+}
+.login-list i:nth-child(1){
+    color:#18acfc;;
+}
+.login-list i:nth-child(2){
+    color:#ea5d5e;;
+}
+.login-list i:nth-child(3){
+    color:#1989fa;;
+}
+.login-list i:nth-child(4){
+    color:#50b674;;
+}
+
+footer{
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 20px;
+    /* position: absolute; */
+    bottom: 20px;
+}
+
+
+.mi-copy a{
+    color: #999;
+}
+
+

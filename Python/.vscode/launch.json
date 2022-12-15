@@ -1,0 +1,23 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			//配置名称，将会在启动配置的下拉菜单中显示
+			"name": "Python",
+			//配置类型
+			"type": "python",
+			//请求配置类型，可以为launch（启动）或attach（附加）
+			//launch: VSCode 会打开这个程序然后进入调试
+			//attach:你已经打开了程序，然后接通内部调试协议进行调试
+			"request": "launch",
+			"stopOnEntry": false,
+			"python": "D:\\Python39\\python.exe",
+			//将要进行调试的程序的路径
+			"program": "${file}",
+			//调试程序时的工作目录，一般为${workspaceRoot}即代码所在目录
+			"cwd": "${workspaceRoot}",
+			"env": {},
+			"envFile": "${workspaceRoot}/.env"
+		}
+	]
+}

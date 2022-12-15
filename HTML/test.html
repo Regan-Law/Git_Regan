@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>小米商城</title>
+</head>
+<body>
+    <!--头部-->
+    <header>
+        <a href="#"></a>
+    </header>
+    <!--导航栏-->
+    <nav>
+        <div class="center">
+            <div class="left">
+                <a href="#">小米商城</a><span>|</span>
+                <a href="#">MIUI</a><span>|</span>
+                <a href="#">IOT</a><span>|</span>
+                <a href="#">云服务</a><span>|</span>
+                <a href="#">金融</a><span>|</span>
+                <a href="#">有品</a><span>|</span>
+                <a href="#">小爱开放平台</a><span>|</span>
+                <a href="#">政企服务</a>
+            </div>
+            <div class="right">
+                <div class="shoppingCart">
+                    <a href="#">购物车(0)</a>
+                </div>
+                <div class="login">
+                    <a href="#">消息通知</a><span>|</span>
+                    <a href="#">注册</a><span>|</span>
+                    <a href="#">登录</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--主体内容-->
+    <section>
+        <!--logo 导航 搜索栏-->
+        <div class="top">
+            <a class="logo" href="#"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav">
+                <a href="#">小米手机</a>
+                <a href="#">红米</a>
+                <a href="#">电视</a>
+                <a href="#">笔记本</a>
+                <a href="#">盒子</a>
+                <a href="#">新品</a>
+                <a href="#">路由器</a>
+                <a href="#">智能硬件</a>
+                <a href="#">服务</a>
+                <a href="#">社区</a>
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="submit" value="搜">
+                    <input type="text">
+                </form>
+            </div>    
+        </div>
+        <!--边栏 轮播图-->
+        <div class="main">
+            <!--轮播图-->
+            <div class="run">
+                <a class="runimg" style="opacity: 1;" href="#"><img src="images/runimg/01.jpg" alt=""></a>
+                <a class="runimg" href="#"><img src="images/runimg/02.jpg" alt=""></a>
+                <a class="runimg" href="#"><img src="images/runimg/03.jpg" alt=""></a>
+                <a class="runimg" href="#"><img src="images/runimg/04.jpg" alt=""></a>
+                <a class="runimg" href="#"><img src="images/runimg/05.jpg" alt=""></a>
+                <div class="left"><</div>
+                <div class="right">></div>
+                <div class="index">
+                    <a href="#" style="background-color: rgba(255, 255, 255, 0.4);"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <!--边栏-->
+            <div class="leftBar">
+                <a href="#">手机 电话卡<span>></span></a>
+                <a href="#">电视 盒子<span>></span></a>
+                <a href="#">笔记本 平板<span>></span></a>
+                <a href="#">智能 家电<span>></span></a>
+                <a href="#">健康 家居<span>></span></a>
+                <a href="#">出行 儿童<span>></span></a>
+                <a href="#">路由器 手机配件<span>></span></a>
+                <a href="#">移动电源 插线板<span>></span></a>
+                <a href="#">耳机 音响<span>></span></a>
+                <a href="#">生活 米兔<span>></span></a>
+            </div>  
+        </div>
+        <!--主题方块链接-->
+        <div class="theme">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">¤<p>选购手机</p></a></li>
+                    <li><a href="#">¤<p>选购手机</p></a></li>
+                    <li><a href="#">¤<p>选购手机</p></a></li>
+                    <li><a href="#">¤<p>选购手机</p></a></li>
+                    <li><a href="#">¤<p>选购手机</p></a></li>
+                    <li><a href="#">¤<p>选购手机</p></a></li>
+                </ul>
+            </div>
+            <div class="product">
+                <a href="#"><img src="images/z1.jpg" alt=""></a>
+                <a href="#"><img src="images/z2.jpg" alt=""></a>
+                <a href="#"><img src="images/z3.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        var div = document.getElementsByClassName('run')[0];
+        var imgs = div.getElementsByClassName('runimg');//图片
+        var index = div.getElementsByClassName('index')[0];
+        var indexs = index.getElementsByTagName('a');//索引
+        var leftmove = div.getElementsByClassName('left')[0];//左切换
+        var rightmove = div.getElementsByClassName('right')[0];//右切换
+ 
+        for(var i = 0 ; i < indexs.length; i ++){
+            indexs[i].s = i; 
+        }
+        
+        var count = 0;
+        //轮播
+        var run = setInterval(start,1500); 
+        
+        //鼠标移入移除事件绑定
+        div.addEventListener("mouseover",function(){
+            clearInterval(run);
+        },false);
+ 
+        div.addEventListener("mouseout",function(){
+            clearInterval(run);
+            run = setInterval(start,1500);
+        },false);
+        
+        //上一张、下一张按钮事件绑定
+        leftmove.addEventListener("click",function(){
+            imgs[count].style.opacity= 0;
+            indexs[count].style.backgroundColor = "rgba(0,0,0,0.4)";
+            count --;
+            if(count == -1){
+                count = 4;
+            }
+            imgs[count].style.opacity = 1;
+            indexs[count].style.backgroundColor = "rgba(255,255,255,0.4)";
+        },false);
+ 
+        rightmove.addEventListener("click",start,false);
+ 
+        //点击索引小圆点事件绑定
+        index.addEventListener('click',function(e){
+            var event = e || window.event;
+            var target = event.target || event.srcElement;
+            indexs[count].style.backgroundColor = "rgba(0,0,0,0.4)";
+            imgs[count].style.opacity = 0;
+            count = target.s;
+            imgs[count].style.opacity = 1;
+            indexs[count].style.backgroundColor = "rgba(255,255,255,0.4)";
+        },false);
+ 
+        //轮播函数
+        function start (){
+            imgs[count].style.opacity= 0;
+            indexs[count].style.backgroundColor = "rgba(0,0,0,0.4)";
+            count ++;
+            if(count == 5){
+                count = 0;
+            }
+            imgs[count].style.opacity = 1;
+            indexs[count].style.backgroundColor = "rgba(255,255,255,0.4)";
+        }
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+import datetime
+birthday=datetime.date(2001,10,17)
+print(birthday.strftime('%Y%m%d'))
+print(birthday.strftime('%Y-%m-%d'))
+print(birthday.strftime('%Y %m %d'))
+print(birthday.strftime('%d%m%Y'))
+print(birthday.strftime('%d %m %Y'))
+print(birthday.strftime('%d-%m-%Y'))
+print(birthday.strftime('%m%d%Y'))
+print(birthday.strftime('%m%d %Y'))
+print(birthday.strftime('%m%d-%Y'))
+print(birthday.strftime('%Y|%m|%d'))
+print('童言', 2015301332, '软工')

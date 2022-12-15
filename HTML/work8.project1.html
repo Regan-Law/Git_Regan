@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>列表框图像浏览器</title>
+		<style type="text/css">
+			#pictures {
+				text-align: center;
+                border-style: solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pictures">
+			<img src="./webwork8img/img1.jpg" id="picture" />
+			<form>
+				列表图像浏览器<select id="zoom" onchange="changeimg()">
+					<option value="./webwork8img/img1.jpg">选择图像</option>
+					<option value="./webwork8img/img2.jpg">卡通图片2</option>
+					<option value="./webwork8img/img3.jpg">卡通图片3</option>
+				</select>
+			</form>
+		</div>
+        <script type="text/javascript">
+        function changeimg(){
+			var x=document.getElementById("picture").src=document.getElementById("zoom").value;
+		}
+        </script>
+	</body>
+</html>

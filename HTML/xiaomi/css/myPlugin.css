@@ -1,0 +1,4 @@
+/*****************/
+.tabs li.active>a{color:#FF6700;border-bottom:2px solid #FF6700;}
+.tabs>ul {display: none;}
+.tabs ul.active {display: block; }

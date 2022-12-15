@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>仿小米商城注册界面</title>
+		<link rel="stylesheet" href="./css/workfinal-register.css" />
+        <script type="text/javascript" src="./js/workfinal-register.js"></script>
+	</head>
+	<body>
+		<div class="login">
+			<div class="lg-bk"><img src="./MI/loginleft.jpg"></div>
+			<div class="login-content">
+				<div class="header">
+					<div class="hl">
+						<div class="img"></div>
+						<span>小米账号</span>
+					</div>
+					<div class="hr">
+						<div class="min-nav">
+							<span> <a href="">用户协议</a></span>
+							<span> <a href="">隐私政策</a></span>
+							<span> <a href="">帮助中心</a></span>
+							<span> <a href="">中文(简体)</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="login-card-wrap">
+					<div class="login-card">
+						<div class="login-choice">
+							<a href="./workfinal-login.html">登录</a>
+							<a href="">注册</a>
+						</div>
+						<form action="" class="mi-form">
+							<p>
+								<input
+									type="text"
+									placeholder="手机号"
+									id="input-id"
+									required
+								/>
+							</p>
+							<p>
+								<input type="text" placeholder="短信验证码"  required id="cfm" />
+								<input type="button" value="获取验证码" id="getcfm" />
+							</p>
+							<div class="accpet">
+									<input type="checkbox" checked />
+									已阅读并同意小米账户
+									<a href="">用户协议</a>
+									和
+									<a href="">隐私政策</a>
+							</div>
+							<p>
+								<input type="button" value="注册" id="input-sub" onclick="register()"/>
+							</p>
+						</form>
+						<div class="help">
+							<p>
+								<a href="">收不到验证码？</a>
+							</p>
+							<div class="accpet">
+								<form action="">
+									<input type="checkbox" checked />
+									已阅读并同意小米账户
+									<a href="">用户协议</a>
+									和
+									<a href="">隐私政策</a>
+								</form>
+							</div>
+						</div>
+						<div class="login-ortherway">
+							<p class="title">
+								<a href="#">其他方式登录</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<p class="mi-copy">
+						小米公司版权所有-京ICP备10046444-
+						<a href=""> 京公网安备11010802020134号 </a>
+						-京ICP证110507号
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

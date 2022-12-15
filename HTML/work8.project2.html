@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>简易福彩投注程序</title>
+		<style type="text/css">
+			#main {
+				border-style: solid;
+				border-color: red;
+			}
+			h1 {
+				text-align: center;
+			}
+			#reset {
+				height: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function randoma() {
+				var x = new Array();
+				for (var i = 0; i < 8; i++) {
+					x[i] = Math.round(Math.random() * (100 - 0) + 0);
+				}
+				document.getElementById("random1").value = x.join(" ");
+			}
+			function randomb() {
+				var x = new Array();
+				for (var i = 0; i < 8; i++) {
+					x[i] = Math.round(Math.random() * (100 - 0) + 0);
+				}
+				document.getElementById("random2").value = x.join(" ");
+			}
+			function randomc() {
+				var x = new Array();
+				for (var i = 0; i < 8; i++) {
+					x[i] = Math.round(Math.random() * (100 - 0) + 0);
+				}
+				document.getElementById("random3").value = x.join(" ");
+			}
+		</script>
+		<div id="main">
+			<img src="./webwork8img/ico_7l.gif" />
+			<h1>简单福彩投注程序</h1>
+			<br />
+			<form>
+				<table>
+					<tr>
+						<td>
+							彩票号码<input type="text" id="random1" readonly /><input
+								type="button"
+								value="投注"
+								onclick="randoma()"
+							/>
+						</td>
+						<td rowspan="3"><input type="reset" value="清空" id="reset" /></td>
+					</tr>
+					<tr>
+						<td>
+							彩票号码<input type="text" id="random2" readonly /><input
+								type="button"
+								value="投注"
+								onclick="randomb()"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							彩票号码<input type="text" id="random3" readonly /><input
+								type="button"
+								value="投注"
+								onclick="randomc()"
+							/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

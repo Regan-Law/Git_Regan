@@ -1,0 +1,18 @@
+{
+	"Print to conaole":{
+		"prefix": "java", 
+		"body": [
+			"import java.util.*;",
+			"import java.io.*;",
+			"",
+			"public class $0{",
+			"    public static void main(String args[]) {", 
+			"        Scanner sc = new Scanner(System.in);", 
+			"        ", 
+			"        sc.close();", 
+			"    }", 
+			"}",
+		],
+		"description": "A java file template." 
+	}
+	}

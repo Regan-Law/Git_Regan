@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>计算圆的面积</title>
+		<style type="text/css">
+			#circle {
+				text-align: center;
+				border-style: groove;
+				border-color: red;
+				border-width: 10px;
+				background-color: #66ffcc;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="circle">
+			<h2>计算圆的面积</h2>
+			<br /><br /><br />
+			<form>
+				半径：<input type="text" id="inr" /><br />
+				面积：<input type="text" id="areas" readonly /><br />
+				<input type="button" value="计算" onclick="count()" />
+				<input type="reset" value="清空" />
+			</form>
+		</div>
+		<script type="text/javascript">
+			function count() {
+				var inr = parseFloat(document.getElementById("inr").value);
+				if (isNaN(inr)) {
+					alert("请输入数字！");
+					return false;
+				}
+				var area = Math.PI * (inr * inr);
+				document.getElementById("areas").value = area.toFixed(2);
+			}
+		</script>
+	</body>
+</html>

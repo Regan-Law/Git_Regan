@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>仿小米商城登录界面</title>
+		<link rel="stylesheet" href="./css/workfinal-login.css" />
+        <script type="text/javascript" src="./js/workfinal-login.js"></script>
+	</head>
+	<body>
+        <div class="login">
+            <div class="lg-bk"><img src="./MI/loginleft.jpg"></div> 
+            <div class="login-content">
+                <div class="header">
+                    <div class="hl">
+                        <div class="img"></div>
+                        <span>小米账号</span>
+                    </div>
+                    <div class="hr">
+                        <div class="min-nav">
+                            <span> <a href="">用户协议</a></span>
+                            <span> <a href="">隐私政策</a></span>
+                            <span> <a href="">帮助中心</a></span>
+                            <span> <a href="">中文(简体)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-card-wrap">
+                    <div class="login-card">
+                        <div class="login-choice">
+                            <a href="">登录</a>
+                            <a href="./workfinal-register.html">注册</a>
+                        </div>
+                        <form action="" class="mi-form" >
+                            <p>
+                                <input type="text" placeholder="邮箱/手机号码/小米ID" id="input-id" required>
+                            </p>
+                            <p>
+                                <input type="password" placeholder="密码" required id="input-psd"  data-message="密码长度应该为8-15位">
+                            </p>
+                            <div class="accpet">
+									<input type="checkbox" checked />
+									已阅读并同意小米账户
+									<a href="">用户协议</a>
+									和
+									<a href="">隐私政策</a>
+							</div>
+                            <p>
+                                <input type="button" value="登录" class="input-sub" onclick="login()">
+                            </p>
+                        </form>
+                        
+                        <div class="help">
+                            <span>
+                                <a href="">忘记密码？</a>
+                            </span>
+                            <span>
+                                <a href="">手机号登录</a>
+                            </span>
+                        </div>
+                        <div class="login-ortherway">
+                            <p class="title">
+                                <a href="#">其他方式登录</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="mi-copy">
+                        小米公司版权所有-京ICP备10046444-
+                        <a href="">
+                            京公网安备11010802020134号
+                        </a>
+                        -京ICP证110507号
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

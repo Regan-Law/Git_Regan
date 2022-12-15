@@ -1,0 +1,43 @@
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: '微软雅黑';
+	font-size: 14px;
+	overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6,strong,b{
+	font-weight: normal;
+  }
+  ul,li,ol{
+	list-style: none; 
+  }
+  a,u{
+	text-decoration: none;
+  }
+  /* a{
+    color: #333;
+  } */
+  em,i{
+	font-style: normal;
+  }
+  /* img{
+	display: block;
+  } */
+  input{
+	border: 0;
+	outline: none;
+  }
+ 
+  
+  .fl{
+	float: left;
+  }
+  .fr{
+	float: right;
+  }
+
+  

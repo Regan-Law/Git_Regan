@@ -1,0 +1,42 @@
+.slider {
+	width: 1226px;
+	height:460px;
+	position:relative;
+	overflow:hidden;
+	z-index:-1;
+}
+.slider .imgs {
+	position:absolute;
+	top: 0;  left: 0;
+	height:240px;
+}
+.slider .imgs li{
+	float:left;
+	z-index:0;
+}
+/*.slider .indexs {*/
+    /*position:absolute;*/
+    /*bottom:15px;*/
+    /*right:30px;*/
+/*}*/
+/*.slider .indexs li {*/
+    /*width: 22px;*/
+    /*height: 22px;*/
+    /*line-height: 22px;*/
+    /*display: inline-block;*/
+    /*background: #3e3e3e;*/
+    /*color: #fff;    */
+    /*border-radius: 50%;*/
+    /*text-align: center;*/
+    /*cursor: pointer;*/
+    /*margin-left:10px;*/
+/*}*/
+/*.slider .indexs li:hover,.slider .indexs li.hover {*/
+    /*background:#b61b1f;*/
+/*}*/
+/**广告轮播序号***/
+.slider{position:relative;}
+.slider .indexs{position:absolute;bottom: 30px;right:67px;}
+.slider .indexs li{float:left;width:6px;height:6px;border:2px solid #939393;
+    border-radius:10px;margin:10px;background:#8F8F8F;cursor:pointer;}
+.slider .indexs li:hover,.slider .indexs li.hover{background:#fff;}

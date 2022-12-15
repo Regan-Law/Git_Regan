@@ -1,0 +1,1 @@
+pyreverse -ASmy -o png --ignore google D:\Regan\Python\Finalresults.py

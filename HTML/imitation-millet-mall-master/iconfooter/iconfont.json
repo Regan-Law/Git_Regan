@@ -1,0 +1,65 @@
+{
+  "id": "2818560",
+  "name": "小米foot",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "579861",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1235221",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "3755557",
+      "name": "信息",
+      "font_class": "icon-test",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "90513",
+      "name": "15天无理由退货",
+      "font_class": "15tianwuliyoutuihuo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "446561",
+      "name": "7天退换",
+      "font_class": "7tiantuihuan",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "3715707",
+      "name": "地点",
+      "font_class": "didian",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "5755753",
+      "name": "工具",
+      "font_class": "gongju",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "20384447",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "ec99",
+      "unicode_decimal": 60569
+    }
+  ]
+}

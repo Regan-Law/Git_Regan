@@ -1,0 +1,30 @@
+  /* 公共样式 */
+  .clearfix::before,
+  .clearfix::after{
+	  content: '';
+	  display: table;
+	  clear: both;
+  }
+  
+  .w {
+      width:1226px;
+      
+  }
+
+.icon {
+  width: 1.30em;
+  height: 1.30em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  padding-right: 7px;
+}
+
+.pos-r{position:relative;}
+.pos-a{position:absolute;}
+
+.fs12{font-size:12px;}
+.fs14{font-size:14px;}
+.fs16{font-size:16px;}
+.fs18{font-size:18px;}
+.fs20{font-size:20px;}

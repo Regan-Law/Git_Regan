@@ -1,0 +1,12 @@
+release/lunarcalendarinfo.o
+release/lunarcalendaritem.o
+release/lunarcalendarwidget.o
+release/main.o
+release/newcase.o
+release/widget.o
+release/qrc_Resource.o
+release/moc_lunarcalendarinfo.o
+release/moc_lunarcalendaritem.o
+release/moc_lunarcalendarwidget.o
+release/moc_newcase.o
+release/moc_widget.o

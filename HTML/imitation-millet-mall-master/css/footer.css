@@ -1,0 +1,163 @@
+footer {
+    background-color: #fff;
+}
+
+footer .f-service {
+    margin: 0 auto;
+}
+
+footer .f-service .list-service {
+    padding: 27px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+footer .f-service .list-service li {
+    /* flex: row nowrap; */
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer .f-service .list-service li a {
+    color: #616161;
+}
+
+footer .f-service .list-service li:hover a {
+    color: #ff6700;
+}
+
+footer .f-link {
+    padding: 40px 0;
+}
+
+footer .f-link dl {
+    float: left;
+    width: 160px;
+}
+
+footer .f-link dl dt {
+    margin-bottom: 26px;
+    line-height: 1.25;
+}
+
+footer .f-link dl dd {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+footer .f-link dl dd a {
+    color: #424242;
+}
+
+footer .f-link dl dd a:hover {
+    color: #ff6700;
+}
+
+footer .f-service .col-tel {
+    width: 251px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .f-service .f-link .col-tel .phone {
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+
+footer .f-service .f-link .col-tel .f-btn {
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+}
+
+footer .f-service .f-link .col-tel .f-btn:hover {
+    background: #ff6700;
+    color: #fff;
+}
+
+footer .f-service .f-link .col-tel p {
+    margin-bottom: 5px;
+}
+
+footer .f-service .f-link .col-tel .follow {
+    margin-top: 10px;
+    height: 24px;
+    line-height: 24px;
+}
+
+footer .f-service .f-link .col-tel .follow i {
+    vertical-align: middle;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+footer .f-service .f-link .col-tel .follow i:hover {
+    color: #ff6700;
+    cursor: pointer;   
+}
+
+
+footer .f-service .f-link .col-tel .follow img {
+    width: 126px;
+    height: 126px;
+    vertical-align: middle;
+    position: absolute;
+    top: 28px;
+    left: 48px;
+  
+}
+
+
+
+footer .f-info {
+    padding-top: 30px;
+}
+
+footer .f-info .logo {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+    background: url(../img/logo-mi2.png) no-repeat center/100% 100%;
+}
+
+footer .f-info .f-sites .sites a {
+    color: #757575;
+}
+footer .f-info .f-sites .sites a:hover{
+    color: #ff6700;
+}
+
+footer .f-info .f-sites .f-copy {
+    color: #b0b0b0;
+}
+
+footer .f-info .f-sites .f-copy a {
+    color: #b0b0b0;
+}
+footer .f-info .f-sites .f-copy a:hover{
+    color: #ff6700;
+}
+
+footer .f-info .sites-pic img {
+    height: 28px;
+}
+
+
+footer .f-service .slogan {
+    height: 20px;
+    margin: 30px auto;
+    background: url(../img/slogan2020.png) no-repeat center 0;
+}

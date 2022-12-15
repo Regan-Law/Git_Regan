@@ -1,0 +1,49 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch workB2",
+            "request": "launch",
+            "mainClass": "workB2",
+            "projectName": "Java_c2d40f29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Adminlogin",
+            "request": "launch",
+            "mainClass": "OS.Adminlogin",
+            "projectName": "Java_c2d40f29"
+        },
+        {
+            "type": "java",
+            "name": "Launch UI",
+            "request": "launch",
+            "mainClass": "OS.UI",
+            "projectName": "Java_c2d40f29"
+        },
+        {
+            "type": "java",
+            "name": "Launch os",
+            "request": "launch",
+            "mainClass": "OS.os",
+            "projectName": "Java_c2d40f29"
+        },
+        {
+            "type": "java",
+            "name": "Launch workB2$Person",
+            "request": "launch",
+            "mainClass": "workB2$Person",
+            "projectName": "Java_c2d40f29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
