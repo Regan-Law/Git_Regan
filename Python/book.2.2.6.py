@@ -1,3 +1,14 @@
+'''
+Author: ReganLaw 609607745@qq.com
+Date: 2022-12-15 13:19:52
+LastEditors: ReganLaw 609607745@qq.com
+LastEditTime: 2022-12-19 11:44:32
+FilePath: \\Git_Regan\\Python\\book.2.2.6.py
+Description: 
+
+Copyright (c) 2022 by ReganLaw 609607745@qq.com, All Rights Reserved. 
+'''
+
 import turtle
 turtle.penup()
 turtle.pensize(3)
