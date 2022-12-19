@@ -3,4 +3,4 @@ Library           Selenium2Library
 
 *** Test Cases ***
 open browser
-    open browser    https://www.tmall.com    edge
+    open browser    https://www.taobao.com    edge
