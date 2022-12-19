@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.9.7 on win32)" generated="20221217 20:11:27.459" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.9.7 on win32)" generated="20221219 11:57:41.414" rpa="false" schemaversion="3">
 <suite id="s1" name="Git Regan" source="D:\Regan\Git_Regan">
 <suite id="s1-s1" name="Robot" source="D:\Regan\Git_Regan\Robot">
-<suite id="s1-s1-s1" name="TMall" source="D:\Regan\Git_Regan\Robot\TMall">
-<suite id="s1-s1-s1-s1" name="Test" source="D:\Regan\Git_Regan\Robot\TMall\test.robot">
+<suite id="s1-s1-s1" name="Taobao" source="D:\Regan\Git_Regan\Robot\Taobao">
+<suite id="s1-s1-s1-s1" name="Test" source="D:\Regan\Git_Regan\Robot\Taobao\test.robot">
 <test id="s1-s1-s1-s1-t1" name="open browser" line="5">
 <kw name="Open Browser" library="Selenium2Library">
-<arg>https://www.tmall.com</arg>
+<arg>https://www.taobao.com</arg>
 <arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221217 20:11:27.959" level="INFO">Opening browser 'edge' to base url 'https://www.tmall.com'.</msg>
-<status status="PASS" starttime="20221217 20:11:27.958" endtime="20221217 20:11:30.953"/>
+<msg timestamp="20221219 11:57:41.947" level="INFO">Opening browser 'edge' to base url 'https://www.taobao.com'.</msg>
+<status status="PASS" starttime="20221219 11:57:41.946" endtime="20221219 11:57:44.588"/>
 </kw>
-<status status="PASS" starttime="20221217 20:11:27.957" endtime="20221217 20:11:30.954"/>
+<status status="PASS" starttime="20221219 11:57:41.943" endtime="20221219 11:57:44.588"/>
 </test>
-<status status="PASS" starttime="20221217 20:11:27.597" endtime="20221217 20:11:30.955"/>
+<status status="PASS" starttime="20221219 11:57:41.587" endtime="20221219 11:57:44.589"/>
 </suite>
-<status status="PASS" starttime="20221217 20:11:27.591" endtime="20221217 20:11:30.958"/>
+<status status="PASS" starttime="20221219 11:57:41.576" endtime="20221219 11:57:44.592"/>
 </suite>
-<status status="PASS" starttime="20221217 20:11:27.584" endtime="20221217 20:11:30.960"/>
+<status status="PASS" starttime="20221219 11:57:41.569" endtime="20221219 11:57:44.597"/>
 </suite>
-<status status="PASS" starttime="20221217 20:11:27.522" endtime="20221217 20:11:30.965"/>
+<status status="PASS" starttime="20221219 11:57:41.480" endtime="20221219 11:57:44.601"/>
 </suite>
 <statistics>
 <total>
@@ -31,8 +31,8 @@
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Git Regan">Git Regan</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot">Git Regan.Robot</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TMall">Git Regan.Robot.TMall</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Test">Git Regan.Robot.TMall.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Taobao">Git Regan.Robot.Taobao</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Test">Git Regan.Robot.Taobao.Test</stat>
 </suite>
 </statistics>
 <errors>
