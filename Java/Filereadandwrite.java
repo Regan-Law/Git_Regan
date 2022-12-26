@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class Filereadandwrite {
-    public static void main(String args[]) throws IOException{
+    public static void main(String[] args) throws IOException{
         File readpath=new File("D:\\test.txt");
         FileReader read=new FileReader(readpath);
         BufferedReader bufferread=new BufferedReader(read);

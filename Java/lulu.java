@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class lulu {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         TreeSet<String> s = new TreeSet<String>(new MyComparatorup());
         TreeSet<String> sr = new TreeSet<String>(new MyComparatordown());
         s.add("HashSet");

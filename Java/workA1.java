@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class workA1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("请输入学生成绩：");
         int score=sc.nextInt();
