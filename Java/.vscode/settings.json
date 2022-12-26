@@ -1,6 +1,6 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "d:\\JDBC\\mssql-jdbc-9.4.1.jre16.jar"
+        "d:\\MySQL\\Connector J 8.0\\mysql-connector-j-8.0.31.jar"
     ]
 }
