@@ -46,41 +46,41 @@ class Circle extends Shape {
     }
 
     public void cha() {
-        System.out.print("Ô²µÄÖÜ³¤£º");
+        System.out.print("åœ†çš„å‘¨é•¿ï¼š");
         zhouchang();
-        System.out.print("Ô²µÄÃæ»ý£º");
+        System.out.print("åœ†çš„é¢ç§¯ï¼š");
         area();
     }
 
     public Circle(double height) {
-        System.out.print("×Ô¶¯¸³Öµ£º");
+        System.out.print("è‡ªåŠ¨èµ‹å€¼ï¼š");
         this.setHeight(height);
     }
 }
 
 class Rect extends Shape {
     public void zhouchang() {
-        System.out.println("ÖÜ³¤Îª£º" + (double) 2 * this.getdLong() + (double) 2 * this.getWidth());
+        System.out.println("å‘¨é•¿ä¸ºï¼š" + (double) 2 * this.getdLong() + (double) 2 * this.getWidth());
     }
 
     public void area() {
-        System.out.println("Ãæ»ýÎª£º" + this.getdLong() * this.getWidth());
+        System.out.println("é¢ç§¯ä¸ºï¼š" + this.getdLong() * this.getWidth());
     }
 
     public void cha() {
         double result = this.getdLong() - this.getWidth();
-        String shape = "³¤Îª" + this.getdLong() + "¿íÎª" + this.getWidth();
+        String shape = "é•¿ä¸º" + this.getdLong() + "å®½ä¸º" + this.getWidth();
         String str;
         if (result > 0) {
-            str = ",´ËÍ¼ÐÎÎª³¤·½ÐÎ¡£";
+            str = ",æ­¤å›¾å½¢ä¸ºé•¿æ–¹å½¢ã€‚";
         } else {
-            str = ",³¤µÈÓÚ¿í£¬´ËÍ¼ÐÎÎªÕý·½ÐÎ¡£";
+            str = ",é•¿ç­‰äºŽå®½ï¼Œæ­¤å›¾å½¢ä¸ºæ­£æ–¹å½¢ã€‚";
         }
         System.out.println(shape + str);
     }
 
     public Rect(double dlong, double width) {
-        System.out.print("×Ô¶¯¸³Öµ£º");
+        System.out.print("è‡ªåŠ¨èµ‹å€¼ï¼š");
         this.setdLong(dlong);
         this.setWidth(width);
     }

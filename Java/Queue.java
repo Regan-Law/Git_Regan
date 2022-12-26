@@ -2,7 +2,7 @@
  * @Author: ReganLaw 609607745@qq.com
  * @Date: 2022-12-15 13:19:52
  * @LastEditors: ReganLaw 609607745@qq.com
- * @LastEditTime: 2022-12-26 18:44:24
+ * @LastEditTime: 2022-12-26 18:52:37
  * @FilePath: \\Git_Regan\\Java\\Queue.java
  * @Description: 
  * 
@@ -20,7 +20,7 @@ class MyQueue {
 
     public void in(Object o) {
     
-		System.out.println("Èë¶Ó\t"+o);
+		System.out.println("å…¥é˜Ÿ\t"+o);
         data.add(o);
     }
 
@@ -40,7 +40,7 @@ class MyQueue {
     }
 
     public void toStringQueue() {
-        System.out.println("½øÈë¶ÓÁĞÔªËØÎª£º");
+        System.out.println("è¿›å…¥é˜Ÿåˆ—å…ƒç´ ä¸ºï¼š");
         Iterator<Object> it = data.iterator();
         while (it.hasNext()) {
             Object object = it.next();
@@ -57,7 +57,7 @@ class MyQueueTest {
         Queue.in(2);
         Queue.in(3);
         Queue.toStringQueue();
-        System.out.println("³ö¶Ó²Ù×÷£º");
+        System.out.println("å‡ºé˜Ÿæ“ä½œï¼š");
         Queue.out();
         Queue.out();
         Queue.out();

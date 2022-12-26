@@ -7,13 +7,13 @@ public class workC1 {
         array myarray=new array();
         myarray.print();
         myarray.sort();
-        System.out.println("ÇëÊäÈëĞèÒª²åÈëµÄÊı£º");
+        System.out.println("è¯·è¾“å…¥éœ€è¦æ’å…¥çš„æ•°ï¼š");
         int n=sc.nextInt();
         myarray.insert(n);
-        System.out.println("ÇëÊäÈëĞèÒªÉ¾³ıµÄÊı£º");
+        System.out.println("è¯·è¾“å…¥éœ€è¦åˆ é™¤çš„æ•°ï¼š");
         int d=sc.nextInt();
         myarray.delete(d);
-        System.out.println("ÇëÊäÈëĞèÒª²éÕÒµÄÊı£º");
+        System.out.println("è¯·è¾“å…¥éœ€è¦æŸ¥æ‰¾çš„æ•°ï¼š");
         int s=sc.nextInt();
         myarray.search(s);
         sc.close();
@@ -26,7 +26,7 @@ public class workC1 {
         }
         public void sort(){
             Arrays.sort(a);
-            System.out.println("ÅÅĞòºóÎª"+Arrays.toString(a));
+            System.out.println("æ’åºåä¸º"+Arrays.toString(a));
         }
         public void insert(int n){
             int newa[]=new int[a.length+1];
@@ -34,7 +34,7 @@ public class workC1 {
             newa[a.length]=n;
             Arrays.sort(newa);
             a=newa;
-            System.out.println("²åÈëºóµÄÊı×éÎª");
+            System.out.println("æ’å…¥åçš„æ•°ç»„ä¸º");
             System.out.println(Arrays.toString(newa));
         }
         public void delete(int n){
@@ -47,12 +47,12 @@ public class workC1 {
             }
             Arrays.sort(newd);
             a=newd;
-            System.out.println("É¾³ıºóµÄÊı×éÎª");
+            System.out.println("åˆ é™¤åçš„æ•°ç»„ä¸º");
             System.out.println(Arrays.toString(newd));
         }
         public void search(int n){
             int position=Arrays.binarySearch(a,n);
-            System.out.println("²éÕÒµ½µÄ"+n+"µÄÎ»ÖÃÊÇ"+(position+1));
+            System.out.println("æŸ¥æ‰¾åˆ°çš„"+n+"çš„ä½ç½®æ˜¯"+(position+1));
         }
     }
 }

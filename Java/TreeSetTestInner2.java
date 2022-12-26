@@ -25,13 +25,13 @@ public class TreeSetTestInner2{
         sr.add("HashMap");
         sr.add("TreeSet");
         sr.add("LinkedList");
-        System.out.println("ÉıĞò:");
+        System.out.println("å‡åº:");
         Iterator<String>it=s.iterator();
         while(it.hasNext()) {
             System.out.println(it.next());
         } 
         Iterator<String>itersr=sr.iterator();
-        System.out.println("½µĞò:");
+        System.out.println("é™åº:");
         while(itersr.hasNext()) {
             System.out.println(itersr.next());
         }

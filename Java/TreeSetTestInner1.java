@@ -2,7 +2,7 @@
  * @Author: ReganLaw 609607745@qq.com
  * @Date: 2022-12-15 13:19:52
  * @LastEditors: ReganLaw 609607745@qq.com
- * @LastEditTime: 2022-12-26 18:45:37
+ * @LastEditTime: 2022-12-26 18:51:37
  * @FilePath: \\Git_Regan\\Java\\TreeSetTestInner1.java
  * @Description: 
  * 
@@ -27,12 +27,12 @@ public class TreeSetTestInner1 {
         sr.add("HashMap");
         sr.add("TreeSet");
         sr.add("LinkedList");
-        System.out.println("…˝–Ú:");
+        System.out.println("ÂçáÂ∫è:");
         Iterator<String>it=s.iterator();
         while(it.hasNext()) {
             System.out.println(it.next());
         }
-        System.out.println("Ωµ–Ú:");
+        System.out.println("ÈôçÂ∫è:");
         Iterator<String>itersr=sr.iterator();
         while(itersr.hasNext()) {
             System.out.println(itersr.next());

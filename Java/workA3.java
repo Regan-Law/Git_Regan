@@ -2,7 +2,7 @@
  * @Author: ReganLaw 609607745@qq.com
  * @Date: 2022-12-15 13:19:52
  * @LastEditors: ReganLaw 609607745@qq.com
- * @LastEditTime: 2022-12-26 18:46:13
+ * @LastEditTime: 2022-12-26 18:50:50
  * @FilePath: \\Git_Regan\\Java\\workA3.java
  * @Description: 
  * 
@@ -14,7 +14,7 @@ public class workA3{
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("ÇëÊäÈë½ð×ÖËþµÄ²ãÊý");
+        System.out.println("è¯·è¾“å…¥é‡‘å­—å¡”çš„å±‚æ•°");
         int n=sc.nextInt();
         for(int i=0;i<n;i++)
 		{          

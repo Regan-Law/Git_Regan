@@ -9,21 +9,21 @@ class MyStack {
     }
 
     public void pushStack(Object x) {
-        System.out.println("Ñ¹Èë\t" + x);
+        System.out.println("å‹å…¥\t" + x);
         arrayList.add(x);
     }
 
     public void popStack() {
         if (arrayList.size() == 0) {
-            System.out.println("Õ»Îª¿Õ£¬ÎŞÊı¾İµ¯³ö");
+            System.out.println("æ ˆä¸ºç©ºï¼Œæ— æ•°æ®å¼¹å‡º");
         } else {
-            System.out.println("µ¯³ö\t" + arrayList.get(arrayList.size() - 1));
+            System.out.println("å¼¹å‡º\t" + arrayList.get(arrayList.size() - 1));
             arrayList.remove(arrayList.size() - 1);
         }
     }
 
     public void toStringStack() {
-        System.out.println("¶ÑÕ»ÔªËØ£º");
+        System.out.println("å †æ ˆå…ƒç´ ï¼š");
         for (Object i : arrayList) {
             System.out.println("\t" + i);
         }

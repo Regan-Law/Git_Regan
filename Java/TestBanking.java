@@ -2,169 +2,169 @@
  * @Author: ReganLaw 609607745@qq.com
  * @Date: 2022-12-15 13:19:52
  * @LastEditors: ReganLaw 609607745@qq.com
- * @LastEditTime: 2022-12-26 18:44:43
+ * @LastEditTime: 2022-12-26 18:52:06
  * @FilePath: \\Git_Regan\\Java\\TestBanking.java
  * @Description: 
  * 
  * Copyright (c) 2022 by ReganLaw 609607745@qq.com, All Rights Reserved. 
  */
-//import java.util.*;
+import java.util.*;
 
-//class Account {
-//    double balance;
+class Account {
+    double balance;
 
-//    public double getBalance() {
-//        return balance;
-//    }
+    public double getBalance() {
+        return balance;
+    }
 
-//    public Account(double balance) {
-//        this.balance = balance;
-//    }
+    public Account(double balance) {
+        this.balance = balance;
+    }
 
-//    public boolean deposit(double amount) {
-//        balance += amount;
-//        return true;
-//    }
+    public boolean deposit(double amount) {
+        balance += amount;
+        return true;
+    }
 
-//    public boolean withdraw(double amount) {
-//        if (amount <= balance) {
-//            balance -= amount;
-//            return true;
-//        } else
-//            return false;
-//    }
-//}
+    public boolean withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            return true;
+        } else
+            return false;
+    }
+}
 
-//class Customer {
-//    String name;
-//    ArrayList accounts = new ArrayList();
+class Customer {
+    String name;
+    ArrayList accounts = new ArrayList();
 
-//    public Customer(String name) {
-//        this.name = name;
-//    }
+    public Customer(String name) {
+        this.name = name;
+    }
 
-//    public String getName() {
-//        return name;
-//    }
+    public String getName() {
+        return name;
+    }
 
-//    public void addAccount(Account account) {
-//        accounts.add(account);
-//    }
+    public void addAccount(Account account) {
+        accounts.add(account);
+    }
 
-//    public Account getAccount(int index) {
-//        return (Account) (accounts.get(index - 1));
-//    }
+    public Account getAccount(int index) {
+        return (Account) (accounts.get(index - 1));
+    }
 
-//    public ArrayList getAllAccount() {
-//        return accounts;
-//    }
-//}
+    public ArrayList getAllAccount() {
+        return accounts;
+    }
+}
 
-//class Bank {
-//    private HashMap customers;
-//    private int custNum;
+class Bank {
+    private HashMap customers;
+    private int custNum;
 
-//    public Bank() {
-//        customers = new HashMap();
-//        custNum = 0;
-//    }
+    public Bank() {
+        customers = new HashMap();
+        custNum = 0;
+    }
 
-//    public void addCustomer(Customer customer) {
-//        customers.put(new Integer(custNum + 1), customer);
-//        custNum++;
-//    }
+    public void addCustomer(Customer customer) {
+        customers.put(new Integer(custNum + 1), customer);
+        custNum++;
+    }
 
-//    public Customer getCustomer(int index) {
-//        if (index >= 1 && index <= custNum)
-//            return (Customer) (customers.get(new Integer(index)));
-//        else
-//            return null;
-//    }
+    public Customer getCustomer(int index) {
+        if (index >= 1 && index <= custNum)
+            return (Customer) (customers.get(new Integer(index)));
+        else
+            return null;
+    }
 
-//    public HashMap getAllCustomer() {
-//        return customers;
-//    }
+    public HashMap getAllCustomer() {
+        return customers;
+    }
 
-//    public int getCustomerNum() {
-//        return custNum;
-//    }
-//}
+    public int getCustomerNum() {
+        return custNum;
+    }
+}
 
-//class SavingAccount extends Account {
-//    private double rate;
+class SavingAccount extends Account {
+    private double rate;
 
-//    public SavingAccount(double balance, double rate) {
-//        super(balance);
-//        this.rate = rate;
-//    }
-//}
+    public SavingAccount(double balance, double rate) {
+        super(balance);
+        this.rate = rate;
+    }
+}
 
-//class CheckingAccount extends Account {
-//    private double overdraft;
+class CheckingAccount extends Account {
+    private double overdraft;
 
-//    public CheckingAccount(double balance, double overdraft) {
-//        super(balance);
-//        this.overdraft = overdraft;
-//    }
+    public CheckingAccount(double balance, double overdraft) {
+        super(balance);
+        this.overdraft = overdraft;
+    }
 
-//    public CheckingAccount(double balance) {
-//        this(balance, 0.0);
-//    }
+    public CheckingAccount(double balance) {
+        this(balance, 0.0);
+    }
 
-//    public boolean withdraw(double amount) {
-//        if (amount <= balance) {
-//            balance -= amount;
-//            return true;
-//        } else if (amount <= balance + overdraft) {
-//            overdraft -= (amount - balance);
-//            balance = 0;
-//            return true;
-//        } else
-//            return false;
-//    }
+    public boolean withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            return true;
+        } else if (amount <= balance + overdraft) {
+            overdraft -= (amount - balance);
+            balance = 0;
+            return true;
+        } else
+            return false;
+    }
 
-//    public double getOverdraft() {
-//        return overdraft;
-//    }
-//}
+    public double getOverdraft() {
+        return overdraft;
+    }
+}
 
-//public class TestBanking {
-//    public static void main(String args[]) {
-//        Bank bank = new Bank();
-//        bank.addCustomer(new Customer("Ð¡Ã÷"));
-//        bank.addCustomer(new Customer("Ð¡ÕÅ"));
-//        Customer cust1 = bank.getCustomer(1);
-//        Customer cust2 = bank.getCustomer(2);
-//        cust1.addAccount(new SavingAccount(10000.0, 2.1));
-//        cust1.addAccount(new CheckingAccount(10000.0, 10000.0));
-//        cust2.addAccount(new CheckingAccount(10000.0, 5000.0));
-//        Account acc1 = cust1.getAccount(1);
-//        System.out.println(cust1.getName() + "µÄ1ºÅÕË»§Óà¶îÊÇ\t" + acc1.getBalance());
-//        acc1.deposit(1000.0);
-//        System.out.println(cust1.getName() + "µÄ1ºÅÕË»§Óà¶îÊÇ\t" + acc1.getBalance());
-//        acc1.withdraw(20000.0);
-//        System.out.println(cust1.getName() + "µÄ1ºÅÕË»§Óà¶îÊÇ\t" + acc1.getBalance());
-//        acc1.withdraw(10000.0);
-//        System.out.println(cust1.getName() + "µÄ1ºÅÕË»§Óà¶îÊÇ\t" + acc1.getBalance());
-//        CheckingAccount acc2 = (CheckingAccount) cust1.getAccount(2);
-//        System.out.println(cust1.getName() + "µÄ2ºÅÕË»§Óà¶îÊÇ\t" + acc2.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc2.getOverdraft());
-//        acc2.deposit(1000.0);
-//        System.out.println(cust1.getName() + "µÄ2ºÅÕË»§Óà¶îÊÇ\t" + acc2.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc2.getOverdraft());
-//        acc2.withdraw(20000.0);
-//        System.out.println(cust1.getName() + "µÄ2ºÅÕË»§Óà¶îÊÇ\t" + acc2.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc2.getOverdraft());
-//        acc2.withdraw(3000.0);
-//        System.out.println(cust1.getName() + "µÄ2ºÅÕË»§Óà¶îÊÇ\t" + acc2.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc2.getOverdraft());
-//        acc2.withdraw(10000.0);
-//        System.out.println(cust2.getName() + "µÄ2ºÅÕË»§Óà¶îÊÇ\t" + acc2.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc2.getOverdraft());
-//        CheckingAccount acc3 = (CheckingAccount) cust2.getAccount(1);
-//        System.out.println(cust2.getName() + "µÄÕË»§Óà¶îÊÇ\t" + acc3.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc3.getOverdraft());
-//        acc3.deposit(1000.0);
-//        System.out.println(cust2.getName() + "µÄÕË»§Óà¶îÊÇ\t" + acc3.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc3.getOverdraft());
-//        acc3.withdraw(20000.0);
-//        System.out.println(cust2.getName() + "µÄÕË»§Óà¶îÊÇ\t" + acc3.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc3.getOverdraft());
-//        acc3.withdraw(3000.0);
-//        System.out.println(cust2.getName() + "µÄÕË»§Óà¶îÊÇ\t" + acc3.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc3.getOverdraft());
-//        acc3.withdraw(10000.0);
-//        System.out.println(cust2.getName() + "µÄÕË»§Óà¶îÊÇ\t" + acc3.getBalance() + "\tÍ¸Ö§½ð¶îÊÇ:\t" + acc3.getOverdraft());
-//    }
-//}
+public class TestBanking {
+    public static void main(String args[]) {
+        Bank bank = new Bank();
+        bank.addCustomer(new Customer("å°æ˜Ž"));
+        bank.addCustomer(new Customer("å°å¼ "));
+        Customer cust1 = bank.getCustomer(1);
+        Customer cust2 = bank.getCustomer(2);
+        cust1.addAccount(new SavingAccount(10000.0, 2.1));
+        cust1.addAccount(new CheckingAccount(10000.0, 10000.0));
+        cust2.addAccount(new CheckingAccount(10000.0, 5000.0));
+        Account acc1 = cust1.getAccount(1);
+        System.out.println(cust1.getName() + "çš„1å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc1.getBalance());
+        acc1.deposit(1000.0);
+        System.out.println(cust1.getName() + "çš„1å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc1.getBalance());
+        acc1.withdraw(20000.0);
+        System.out.println(cust1.getName() + "çš„1å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc1.getBalance());
+        acc1.withdraw(10000.0);
+        System.out.println(cust1.getName() + "çš„1å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc1.getBalance());
+        CheckingAccount acc2 = (CheckingAccount) cust1.getAccount(2);
+        System.out.println(cust1.getName() + "çš„2å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc2.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc2.getOverdraft());
+        acc2.deposit(1000.0);
+        System.out.println(cust1.getName() + "çš„2å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc2.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc2.getOverdraft());
+        acc2.withdraw(20000.0);
+        System.out.println(cust1.getName() + "çš„2å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc2.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc2.getOverdraft());
+        acc2.withdraw(3000.0);
+        System.out.println(cust1.getName() + "çš„2å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc2.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc2.getOverdraft());
+        acc2.withdraw(10000.0);
+        System.out.println(cust2.getName() + "çš„2å·è´¦æˆ·ä½™é¢æ˜¯\t" + acc2.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc2.getOverdraft());
+        CheckingAccount acc3 = (CheckingAccount) cust2.getAccount(1);
+        System.out.println(cust2.getName() + "çš„è´¦æˆ·ä½™é¢æ˜¯\t" + acc3.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc3.getOverdraft());
+        acc3.deposit(1000.0);
+        System.out.println(cust2.getName() + "çš„è´¦æˆ·ä½™é¢æ˜¯\t" + acc3.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc3.getOverdraft());
+        acc3.withdraw(20000.0);
+        System.out.println(cust2.getName() + "çš„è´¦æˆ·ä½™é¢æ˜¯\t" + acc3.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc3.getOverdraft());
+        acc3.withdraw(3000.0);
+        System.out.println(cust2.getName() + "çš„è´¦æˆ·ä½™é¢æ˜¯\t" + acc3.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc3.getOverdraft());
+        acc3.withdraw(10000.0);
+        System.out.println(cust2.getName() + "çš„è´¦æˆ·ä½™é¢æ˜¯\t" + acc3.getBalance() + "\té€æ”¯é‡‘é¢æ˜¯:\t" + acc3.getOverdraft());
+    }
+}

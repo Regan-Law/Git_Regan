@@ -2,7 +2,7 @@
  * @Author: ReganLaw 609607745@qq.com
  * @Date: 2022-12-15 13:19:52
  * @LastEditors: ReganLaw 609607745@qq.com
- * @LastEditTime: 2022-12-26 18:46:43
+ * @LastEditTime: 2022-12-26 18:50:39
  * @FilePath: \\Git_Regan\\Java\\workB2.java
  * @Description: 
  * 
@@ -23,25 +23,25 @@ public class workB2 {
         }
         public void marry(Person p) {
             if(this.gender==p.gender) {
-                System.out.println("Í¬ĞÔ²»ÄÜ½á»é");
+                System.out.println("åŒæ€§ä¸èƒ½ç»“å©š");
                 return;
             } else if(this.gender==true&&this.age<24) {
-                System.out.println("ÄĞ·½ÄêÁäĞ¡ÓÚ24 £¬²»ÄÜ½á»é");
+                System.out.println("ç”·æ–¹å¹´é¾„å°äº24 ï¼Œä¸èƒ½ç»“å©š");
                 return;
             } else if(this.gender==false&&this.age<22) {
-                System.out.println("Å®·½ÄêÁäĞ¡ÓÚ22 £¬²»ÄÜ½á»é");
+                System.out.println("å¥³æ–¹å¹´é¾„å°äº22 ï¼Œä¸èƒ½ç»“å©š");
                 return;
             } else if(p.gender==true&&p.age<24) {
-                System.out.println("ÄĞ·½ÄêÁäĞ¡ÓÚ24 £¬²»ÄÜ½á»é");
+                System.out.println("ç”·æ–¹å¹´é¾„å°äº24 ï¼Œä¸èƒ½ç»“å©š");
                 return;
             } else if(p.gender==false&&p.age<22) {
-                System.out.println("Å®·½ÄêÁäĞ¡ÓÚ22 £¬²»ÄÜ½á»é");
+                System.out.println("å¥³æ–¹å¹´é¾„å°äº22 ï¼Œä¸èƒ½ç»“å©š");
                 return;
             } else if(this.partner !=null||p.partner !=null) {
-                System.out.println("Ä³Ò»·½ÒÑ»é£¬²»ÄÜ½á»é");
+                System.out.println("æŸä¸€æ–¹å·²å©šï¼Œä¸èƒ½ç»“å©š");
                 return;
             } else {
-                System.out.println("¹§Ï²½á»é³É¹¦");
+                System.out.println("æ­å–œç»“å©šæˆåŠŸ");
                 this.partner=p.partner;
                 p.partner=this.partner;
                 return;
@@ -49,9 +49,9 @@ public class workB2 {
         }
     }
     public static void main(String[] args) {
-        Person p1=new Person("ÕÅÈı",25,true,null);
-        Person p2=new Person("Ğ¡ºì",23,false,null);
-        Person p3=new Person("ÀîËÄ",22,true,null);
+        Person p1=new Person("å¼ ä¸‰",25,true,null);
+        Person p2=new Person("å°çº¢",23,false,null);
+        Person p3=new Person("æå››",22,true,null);
         p1.marry(p2);
         p1.marry(p3);
         p2.marry(p3);      

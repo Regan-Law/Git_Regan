@@ -2,7 +2,7 @@
  * @Author: ReganLaw 609607745@qq.com
  * @Date: 2022-12-15 13:19:52
  * @LastEditors: ReganLaw 609607745@qq.com
- * @LastEditTime: 2022-12-26 18:43:54
+ * @LastEditTime: 2022-12-26 18:53:09
  * @FilePath: \\Git_Regan\\Java\\Filereadandwrite.java
  * @Description: 
  * 
@@ -19,7 +19,7 @@ public class Filereadandwrite {
         File writepath=new File("D:\\test1.txt");
         FileWriter write=new FileWriter(writepath);
         BufferedWriter bufferwrite=new BufferedWriter(write);  
-        System.out.println("读取文件内容为：");
+        System.out.println("璇诲彇鏂囦欢鍐呭涓猴細");
         while ((line=bufferread.readLine())!=null) {
             System.out.println(line);
             bufferwrite.write(line);
@@ -29,7 +29,7 @@ public class Filereadandwrite {
         FileReader over=new FileReader(overpath);
         BufferedReader bufferover=new BufferedReader(over);
         String overline=null;
-        System.out.println("写入后的文件内容为：");
+        System.out.println("鍐欏叆鍚庣殑鏂囦欢鍐呭涓猴細");
         while ((overline=bufferover.readLine())!=null) {
             System.out.println(overline);
         }  

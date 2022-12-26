@@ -3,23 +3,23 @@ import java.util.Scanner;
 public class workA1 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("请输入学生成绩：");
+        System.out.println("璇疯緭鍏ュ鐢熸垚缁╋細");
         int score=sc.nextInt();
         switch(score/10) {
             case(9):
-                System.out.println("等级A");
+                System.out.println("绛夌骇A");
                 break;
             case(8):
-                System.out.println("等级B");
+                System.out.println("绛夌骇B");
                 break;
             case(7):
-                System.out.println("等级C");
+                System.out.println("绛夌骇C");
                 break;
             case(6):
-                System.out.println("等级D");
+                System.out.println("绛夌骇D");
                 break;
             default:
-                System.out.println("等级E");
+                System.out.println("绛夌骇E");
                 break;
         }
 ;

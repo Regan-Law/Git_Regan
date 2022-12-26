@@ -9,7 +9,7 @@ public class workA2{
             nf*=i+1;
             sumf+=nf;
         }
-        System.out.println("ÀûÓÃforÑ­»·¼ÆËã1~10µÄ½×³ËÎª£º"+sumf);
+        System.out.println("åˆ©ç”¨forå¾ªç¯è®¡ç®—1~10çš„é˜¶ä¹˜ä¸ºï¼š"+sumf);
         int sumw=0;
         int x=1,nw=1;
         while(x<11){
@@ -17,7 +17,7 @@ public class workA2{
             x++;
             sumw+=nw;
         }
-        System.out.println("ÀûÓÃwhileÑ­»·¼ÆËã1~10µÄ½×³ËÎª£º"+sumw);
+        System.out.println("åˆ©ç”¨whileå¾ªç¯è®¡ç®—1~10çš„é˜¶ä¹˜ä¸ºï¼š"+sumw);
         sc.close();
     }
 }

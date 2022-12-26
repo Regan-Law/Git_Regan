@@ -54,10 +54,10 @@ class Plane implements Transport {
 public class workD3 {
     public static void main(String[] args) {
         Transport transport = new Plane();
-        System.out.println("飞机运费\t" + transport.calculation(20, 700));
+        System.out.println("椋炴満杩愯垂\t" + transport.calculation(20, 700));
         transport = new Train();
-        System.out.println("火车运费\t" + transport.calculation(20, 700));
+        System.out.println("鐏溅杩愯垂\t" + transport.calculation(20, 700));
         transport = new Truck();
-        System.out.println("货车运费\t" + transport.calculation(20, 700));
+        System.out.println("璐ц溅杩愯垂\t" + transport.calculation(20, 700));
     }
 }

@@ -21,13 +21,13 @@ public class workB1{
         }
     }
     public static class TeacherTest{
-        Teacher t=new Teacher("½¯Æ½","ÄĞ",33,3500);
+        Teacher t=new Teacher("è’‹å¹³","ç”·",33,3500);
         public void info(){
-            System.out.println("ĞÕÃû£º"+t.name+" ĞÔ±ğ£º"+t.sex+" ÄêÁä£º"+t.age);
+            System.out.println("å§“åï¼š"+t.name+" æ€§åˆ«ï¼š"+t.sex+" å¹´é¾„ï¼š"+t.age);
         }
         public void salary(){
             t.add();
-            System.out.println("½ÌÊ¦ÕÇĞ½ºóµÄĞ½Ë®Îª£º"+t.salary);
+            System.out.println("æ•™å¸ˆæ¶¨è–ªåçš„è–ªæ°´ä¸ºï¼š"+t.salary);
         }
     }
 }

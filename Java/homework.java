@@ -5,7 +5,7 @@ public class homework {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int fn=fib(n);
-        System.out.println("ì³²¨ÄÇÆõÊıÁĞµÄµÚ"+n+"¸öÊıÎª:"+fn);
+        System.out.println("æ–æ³¢é‚£å¥‘æ•°åˆ—çš„ç¬¬"+n+"ä¸ªæ•°ä¸º:"+fn);
         sc.close();
     }
 
