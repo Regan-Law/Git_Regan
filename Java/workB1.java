@@ -1,5 +1,5 @@
 public class workB1{
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         TeacherTest tt=new TeacherTest();
         tt.info();

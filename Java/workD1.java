@@ -1,3 +1,13 @@
+/*
+ * @Author: ReganLaw 609607745@qq.com
+ * @Date: 2022-12-15 13:19:52
+ * @LastEditors: ReganLaw 609607745@qq.com
+ * @LastEditTime: 2022-12-26 18:47:51
+ * @FilePath: \\Git_Regan\\Java\\workD1.java
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by ReganLaw 609607745@qq.com, All Rights Reserved. 
+ */
 abstract class Animal {
     public int legs;
 
@@ -100,7 +110,7 @@ class Fish extends Animal implements Pet{
 	}
 }
 public class workD1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Animal a;
 		a=new Spider(8);
 		a.walk();

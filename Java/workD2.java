@@ -93,7 +93,7 @@ class Squ extends Rect {
 }
 
 public class workD2 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Rect rect = new Rect(20, 20);
         rect.cha();
 

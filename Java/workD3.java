@@ -42,7 +42,7 @@ class Plane implements Transport {
 }
 
 public class workD3 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Transport transport = new Plane();
         System.out.println("·É»úÔË·Ñ\t" + transport.calculation(20, 700));
         transport = new Train();

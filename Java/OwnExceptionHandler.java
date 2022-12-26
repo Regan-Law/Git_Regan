@@ -13,7 +13,7 @@ class OwnExceptionSource {
 
 public class OwnExceptionHandler {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         OwnExceptionSource er=new OwnExceptionSource();
         try {
             er.a();

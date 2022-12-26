@@ -1,3 +1,13 @@
+/*
+ * @Author: ReganLaw 609607745@qq.com
+ * @Date: 2022-12-15 13:19:52
+ * @LastEditors: ReganLaw 609607745@qq.com
+ * @LastEditTime: 2022-12-26 18:46:43
+ * @FilePath: \\Git_Regan\\Java\\workB2.java
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by ReganLaw 609607745@qq.com, All Rights Reserved. 
+ */
 public class workB2 {
     public static class Person {
         String name;
@@ -38,7 +48,7 @@ public class workB2 {
             }
         }
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Person p1=new Person("张三",25,true,null);
         Person p2=new Person("小红",23,false,null);
         Person p3=new Person("李四",22,true,null);

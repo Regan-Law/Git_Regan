@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class workC1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         array myarray=new array();
         myarray.print();

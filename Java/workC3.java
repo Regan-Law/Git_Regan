@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class workC3{
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         array myarray=new array();
         myarray.print();

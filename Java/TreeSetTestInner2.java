@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class TreeSetTestInner2{
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         TreeSet<String>s=new TreeSet<String>(new Comparator<String>() {
             public int compare(String o1,String o2) {
                 return o1.compareTo(o2);

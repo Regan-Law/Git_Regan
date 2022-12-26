@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class Filecopy{
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try {
             FileInputStream a=new FileInputStream("D:\\test.txt");
             BufferedInputStream b=new BufferedInputStream(a);
