@@ -40,7 +40,7 @@ public class UI extends JFrame {
 	 * Create the frame.
 	 */
 	public UI() {
-		setTitle("ÓÃ»§µÇÂ¼");
+		setTitle("ç”¨æˆ·ç™»å½•");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 485, 320);
 		contentPane = new JPanel();
@@ -55,33 +55,33 @@ public class UI extends JFrame {
 		userpasswd.setColumns(10);
 		userpasswd.setBounds(185, 106, 197, 32);
 		contentPane.add(userpasswd);
-		
-		JButton login = new JButton("µÇÂ¼");
+
+		JButton login=new JButton("ç™»å½•");
 		login.setBounds(137, 167, 97, 23);
 		login.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				login(e);
 			}
 		});
-		
-		JButton register = new JButton("×¢²á");
+
+		JButton register=new JButton("æ³¨å†Œ");
 		register.setBounds(237, 167, 97, 23);
 		register.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		
-		JLabel name = new JLabel("ÓÃ»§Ãû");
-		name.setBounds(99, 51, 76, 32);
-		name.setFont(new Font("ËÎÌå", Font.PLAIN, 20));
+
+		JLabel name=new JLabel("ç”¨æˆ·å");
+		name.setBounds(99,51,76,32);
+		name.setFont(new Font("å®‹ä½“",Font.PLAIN,20));
 		name.setHorizontalAlignment(SwingConstants.CENTER);
-		
-		JLabel passwd = new JLabel("ÃÜ  Âë");
+
+		JLabel passwd=new JLabel("å¯†  ç ");
 		passwd.setBounds(99, 106, 76, 32);
 		passwd.setHorizontalAlignment(SwingConstants.CENTER);
-		passwd.setFont(new Font("ËÎÌå", Font.PLAIN, 20));
-		
-		JButton adminlogin = new JButton("¹ÜÀíÔ±µÇÂ¼");
+		passwd.setFont(new Font("å®‹ä½“",Font.PLAIN,20));
+
+		JButton adminlogin=new JButton("ç®¡ç†å‘˜ç™»å½•");
 		adminlogin.setBounds(137, 200, 197, 23);
 		adminlogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -99,7 +99,7 @@ public class UI extends JFrame {
 	}
 
 	protected void login(ActionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		String name=username.getText().toString();
 		String passwd=userpasswd.getPassword().toString();
 		Stulogin.StuLogin(name, passwd);

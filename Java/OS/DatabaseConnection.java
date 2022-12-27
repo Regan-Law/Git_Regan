@@ -5,15 +5,13 @@ import java.sql.*;
 public class DatabaseConnection {
 
     public static Connection get(String name,String passwd) {
-        Connection conn = null;
-        String jdbc_driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        String jdbc_url = "jdbc:sqlserver://localhost:1433;DatabaseName=OS";
-        try {
+        Connection conn=null;
+        String jdbc_driver="com.mysql.cj.jdbc.Driver";
+        String jdbc_url="jdbc:mysql://localhost:3306;DatabaseName=OS";
+        try{
             Class.forName(jdbc_driver);
-            conn = DriverManager.getConnection(jdbc_url, "name", "passwd");
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        } catch (SQLException ex) {
+            conn=DriverManager.getConnection(jdbc_url,"name","passwd");
+        }catch(ClassNotFoundException|SQLException ex){
             ex.printStackTrace();
         }
         return conn;

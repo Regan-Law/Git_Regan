@@ -40,7 +40,7 @@ public class Adminlogin extends JFrame {
 	 * Create the frame.
 	 */
 	public Adminlogin() {
-		setTitle("管理员登�?");
+		setTitle("管理员登录");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 485, 320);
 		contentPane = new JPanel();
@@ -61,13 +61,13 @@ public class Adminlogin extends JFrame {
 		
 		JButton register = new JButton("注册");
 		register.setBounds(242, 170, 97, 23);
-		
-		JLabel name = new JLabel("用户�?");
+
+		JLabel name=new JLabel("用户名");
 		name.setBounds(99, 53, 76, 32);
 		name.setHorizontalAlignment(SwingConstants.CENTER);
 		name.setFont(new Font("宋体", Font.PLAIN, 20));
-		
-		JLabel passwd = new JLabel("�?  �?");
+
+		JLabel passwd=new JLabel("密  码");
 		passwd.setBounds(99, 108, 76, 32);
 		passwd.setHorizontalAlignment(SwingConstants.CENTER);
 		passwd.setFont(new Font("宋体", Font.PLAIN, 20));
@@ -94,7 +94,7 @@ public class Adminlogin extends JFrame {
 	}
 
 	protected void adminlogin(ActionEvent e) {
-		// TODO �?动生成的方法存根
+		// TODO �?动生成的方法存根
 		String name=adminname.getText().toString();
 		String passwd=adminpasswd.getPassword().toString();
 		Admlogin.StuLogin(name, passwd);
