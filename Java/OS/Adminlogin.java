@@ -94,7 +94,6 @@ public class Adminlogin extends JFrame {
 	}
 
 	protected void adminlogin(ActionEvent e) {
-		// TODO �?动生成的方法存根
 		String name=adminname.getText().toString();
 		String passwd=adminpasswd.getPassword().toString();
 		Admlogin.StuLogin(name, passwd);
