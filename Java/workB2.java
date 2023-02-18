@@ -25,16 +25,16 @@ public class workB2 {
             if(this.gender==p.gender) {
                 System.out.println("同性不能结婚");
                 return;
-            } else if(this.gender==true&&this.age<24) {
+            } else if(this.gender&&this.age<24) {
                 System.out.println("男方年龄小于24 ，不能结婚");
                 return;
-            } else if(this.gender==false&&this.age<22) {
+            } else if(!this.gender&&this.age<22) {
                 System.out.println("女方年龄小于22 ，不能结婚");
                 return;
-            } else if(p.gender==true&&p.age<24) {
+            } else if(p.gender&&p.age<24) {
                 System.out.println("男方年龄小于24 ，不能结婚");
                 return;
-            } else if(p.gender==false&&p.age<22) {
+            } else if(!p.gender&&p.age<22) {
                 System.out.println("女方年龄小于22 ，不能结婚");
                 return;
             } else if(this.partner !=null||p.partner !=null) {

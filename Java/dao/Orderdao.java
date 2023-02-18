@@ -1,8 +1,16 @@
+/*
+ * @Author: ReganLaw 609607745@qq.com
+ * @Date: 2022-12-15 13:19:52
+ * @LastEditors: ReganLaw 609607745@qq.com
+ * @LastEditTime: 2023-01-10 17:26:42
+ * @FilePath: \\Git_Regan\\Java\\dao\\Orderdao.java
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ReganLaw 609607745@qq.com, All Rights Reserved. 
+ */
 package dao;
 
 import java.sql.*;
-
-import com.microsoft.sqlserver.jdbc.StringUtils;
 
 import db.Order;
 
