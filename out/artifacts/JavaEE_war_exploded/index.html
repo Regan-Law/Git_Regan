@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>调查问卷</h1>
+<form action="survey" method="post">
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="radio" name="sex" value="男" checked>男
+                <input type="radio" name="sex" value="女">女
+            </td>
+        </tr>
+        <tr>
+            <td>所在地：</td>
+            <td><select name="nativePlace">
+                <option value="利比亚">利比亚</option>
+                <option value="上海">上海</option>
+                <option value="广州">广州</option>
+                <option value="深圳">深圳</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>喜欢的歌手：</td>
+            <td><input type="checkbox" name="hobby" value="张三" checked="true">张三
+                <input type="checkbox" name="hobby" value="李四" checked>李四
+                <input type="checkbox" name="hobby" value="王五">王五
+                <input type="checkbox" name="hobby" value="大连一哥">大连一哥</td>
+        </tr>
+        <tr>
+            <td>你的靓照：</td>
+            <td>
+                <input type="file" name="profile"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>个人描述</td>
+            <td><textarea name="description" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="提交"></td>
+            <td><input type="reset" value="重置"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
