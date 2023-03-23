@@ -8,6 +8,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
         google()
         mavenCentral()
     }
@@ -17,3 +18,4 @@ include ':app'
 include ':calculator'
 include ':customdialog'
 include ':listview'
+include ':pickpeach'
