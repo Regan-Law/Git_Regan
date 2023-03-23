@@ -4,8 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.courseexperiment'
-    compileSdk 30
-
+    compileSdk 33
     defaultConfig {
         applicationId "com.example.courseexperiment"
         minSdk 30
