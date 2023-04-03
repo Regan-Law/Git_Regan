@@ -1,7 +1,17 @@
+<!--
+ * @Author: ReganLaw 609607745@qq.com
+ * @Date: 2022-12-15 13:19:50
+ * @LastEditors: ReganLaw 609607745@qq.com
+ * @LastEditTime: 2023-04-02 16:37:35
+ * @FilePath: \\undefinedd:\\Regan\\Git_Regan\\README.en.md
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+-->
 # Git_Regan
 
 #### Description
-vscode
+course code
 
 #### Software Architecture
 Software architecture description
