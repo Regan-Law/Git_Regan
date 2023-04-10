@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">Broadcast</string>
+	<string name="registerButton">启动短信监听</string>
+	<string name="unregisterButton">解除短信监听</string>
+	<string name="registered">已启动短信监听！</string>
+	<string name="unregistered">已解除短信监听！</string>
+	<string name="smsforbid">接受短信权限已被禁止！</string>
+</resources>

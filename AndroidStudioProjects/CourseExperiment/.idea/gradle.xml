@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/broadcast" />
             <option value="$PROJECT_DIR$/calculator" />
             <option value="$PROJECT_DIR$/customdialog" />
             <option value="$PROJECT_DIR$/directory" />
