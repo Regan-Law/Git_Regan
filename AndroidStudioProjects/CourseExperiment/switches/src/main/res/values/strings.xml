@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">开灯与关灯</string>
+	<string name="light_on">开灯</string>
+</resources>
