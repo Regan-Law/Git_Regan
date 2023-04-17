@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="noStdlib" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="classpath">
+              <args>
+                <arg>$MODULE_DIR$/../../../../Stopwatch with Productivity Timer/task/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
+                <arg>$MODULE_DIR$/../../../../Stopwatch with Productivity Timer/task/build/intermediates/app_classes/debug/classes.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/58cfaeff2ddd5aaa13674e748faae6eb/transformed/jetified-viewbinding-7.0.2-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/9c65606d0f8f0a615dfd530e4ea43370/transformed/jetified-robolectric-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/c8601b7fb52a426239e66fa7b68f758f/transformed/jetified-shadows-framework-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/a6d752fefe77237b0437706eb328735a/transformed/monitor-1.4.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/a3774e7e648d83b79a9fe676f6e86e09/transformed/jetified-core-ktx-1.6.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/5fed7ab6d7f40015a906bd0f239fc4ce/transformed/material-1.4.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/35190c5c10d1dfb73bc70d03690f84fa/transformed/appcompat-1.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/524cd2a24e92255d4f388688a1e3f6bf/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/7bd915fc20bebb58379264026adfbd24/transformed/fragment-1.3.6-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/bfeeabe6d5b266826495d9bd81ab7580/transformed/jetified-activity-1.2.4-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/7d61a37d5a71ec23e401dd934af6329f/transformed/jetified-appcompat-resources-1.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/f335c732e04bb2398bf22973ac1833a4/transformed/drawerlayout-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/f25b0bfec558239d33695eb9df830b1a/transformed/coordinatorlayout-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/da6d4580205729526b688610c4a84451/transformed/dynamicanimation-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/b9e64b38a127759524ab4b2d15032249/transformed/recyclerview-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/0c098a7f17ede744480e8810c3cb03c2/transformed/transition-1.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/8a4c1352b4c99307777ebff9fb18d88a/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/58a46e7f1f8872dbc49b4a96ff7281d8/transformed/vectordrawable-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/751385705b24abd7d1e0186b31733439/transformed/viewpager-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/99fe4b54f5ed08d1fa7e634792b68c65/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/5c3eba2a8c708b2cda48441394a2da2f/transformed/loader-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/c5221b63e4f2e33711def43163b4157f/transformed/customview-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/757f0630b6f44cd9af56d36ecb212fcb/transformed/core-1.6.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/dcad8814693dcdd8155da9e8f4a9bbc0/transformed/cursoradapter-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/8cd1d0af56edea2a6c92a1164e06acf9/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/64911f2aa4e78d5c0fb7ad6de80a2f1f/transformed/jetified-savedstate-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/c04bb94ae6007e368c1b35272e408a56/transformed/cardview-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/2e8481c22e8e1f178133a6d6c3a45df8/transformed/lifecycle-runtime-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/5ba46a181358a77b7dd114beccb36cdf/transformed/versionedparcelable-1.1.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/9bbe9aa21503203d232968a2f45a3efa/transformed/lifecycle-viewmodel-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/35697207e387cda7c68d66af02d64c14/transformed/lifecycle-livedata-2.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/1f3f8f7f2df2259b9da5781bdb705415/transformed/lifecycle-livedata-core-2.3.1-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.3.1/fc466261d52f4433863642fb40d12441ae274a98/lifecycle-common-2.3.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/fb00192022bbc7fc582617c1f4c0ad85/transformed/core-runtime-2.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/0b645b9b623874d1558c3175d98d4c68/transformed/interpolator-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/b9ef8616d7d8381d30baafc0c20da892/transformed/documentfile-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/616286807aaa44cfd66fd4fb97f15ff8/transformed/localbroadcastmanager-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/a9e8786342e4c92b97954b90fd0686e3/transformed/print-1.0.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/modules-2/files-2.1/androidx.annotation/annotation/1.2.0/57136ff68ee784c6e19db34ed4a175338fadfde1/annotation-1.2.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/986214066e5fad3108107740e1cdb585/transformed/jetified-junit-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/82dc40e1fefb80e9a5593463bc7c9fd7/transformed/jetified-resources-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/25aafa17b2e76cdcdeb0c8ecfe10a926/transformed/jetified-sandbox-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/977573a63f0a4f421c8d7d451e6283ed/transformed/jetified-utils-reflector-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/35c891427fcb0812f1b483456121e7e3/transformed/jetified-plugins-maven-dependency-resolver-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/520c3235a691d1d94dd3f28f322a4bd1/transformed/jetified-shadowapi-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/a1d8e8b686bd80157813f61f70288a4e/transformed/jetified-utils-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/115858b76c14ab2abfc6976cee411d83/transformed/jetified-pluginapi-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/a1d4e1c12470146d1c9ebf71c05c4dea/transformed/jetified-annotations-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/bd56e2ed8f541e1b84f7aa9f1a76c3c1/transformed/jetified-nativeruntime-4.7.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/793af855d794c6b0e51402dc41dfe556/transformed/jetified-guava-27.0.1-jre.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/4ba8d945c1547326c25907b295084a6e/transformed/jetified-failureaccess-1.0.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/203786729046493372936873e840e528/transformed/jetified-listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/4cf08a718b439862fc72f0f4c57975db/transformed/jetified-jsr305-3.0.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/fa0b97f6897ea1ab73c2f75734be6c1e/transformed/jetified-checker-qual-2.5.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/49b6591ce998f0b02f3b7bade15624f1/transformed/jetified-error_prone_annotations-2.9.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/04ff6daf37a8d8bb971197eff2a8e33c/transformed/jetified-j2objc-annotations-1.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/7cb140b01ca9f920c92e85943a5a22ae/transformed/jetified-animal-sniffer-annotations-1.17.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/7e4f9d0e57e91fd34baaeff031ae90f6/transformed/jetified-javax.inject-1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/2bcf1eb61a0285a943e2ee3342672c51/transformed/jetified-javax.annotation-api-1.3.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/bd26e970637525e7c1c78c02c22a1a11/transformed/jetified-asm-commons-9.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/32eed1ba7c1ac2ee9afe09e8c4bde553/transformed/jetified-asm-util-9.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/cec7eec35014dcc87f99850ef3cdf04a/transformed/jetified-asm-analysis-9.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/491fedb1e439576584af970923c8738a/transformed/jetified-asm-tree-9.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/836451a65a0ce3e338f608287e5f5949/transformed/jetified-asm-9.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/531f1161e6bc3be774b1d0139e95cdcf/transformed/jetified-sqlite4java-1.0.392.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/7026e0687df5735cd9c34827cb56c500/transformed/jetified-icu4j-53.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/51c837ebd8584359050d327b1913becf/transformed/jetified-auto-value-annotations-1.7.4.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/58104cd2f9bb5a6c67ecc9aa82ccc16d/transformed/jetified-bcprov-jdk15on-1.68.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/b9a08ab9be3e23915c633495dc323cb3/transformed/jetified-junit-4.13.2.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/66823d609ee79f78e0be68a16abfd169/transformed/jetified-hamcrest-core-1.3.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/355fda5d6d3ef90fa10bee33ff373d50/transformed/jetified-kotlin-stdlib-jdk8-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/b315b49e2e9b91956fa64b6e2aa720e2/transformed/jetified-kotlin-stdlib-jdk7-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/a0f8695ac914980ee1905c6bab02c350/transformed/jetified-kotlin-stdlib-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/8c0e8030e7bac6f894ea63d12b9c43d2/transformed/jetified-annotations-13.0.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/4a138065e4064cadafab76b6ff7970fc/transformed/jetified-kotlin-stdlib-common-1.6.10.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/344c1a1d45f3fa3b729358d693807d69/transformed/jetified-annotation-experimental-1.1.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../Gradle/gradle_home/caches/transforms-3/00f1d06425c3b45e37c2cfd61d83a433/transformed/constraintlayout-2.1.3-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../JetBrains/apps/AndroidStudio/SDK/platforms/android-33/android.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../../../JetBrains/apps/AndroidStudio/SDK/build-tools/30.0.2/core-lambda-stubs.jar</arg>
+              </args>
+            </stringArg>
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../../Stopwatch with Productivity Timer/task/build/tmp/kotlin-classes/debugUnitTest" />
+            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="moduleName" arg="Stopwatch_with_Productivity_Timer-task_debug" />
+            <stringArg name="apiVersion" arg="1.6" />
+            <stringArg name="languageVersion" arg="1.6" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../../../Stopwatch with Productivity Timer/task/build/tmp/kotlin-classes/debug</arg>
+                <arg>$MODULE_DIR$/../../../../Stopwatch with Productivity Timer/task/build/intermediates/javac/debug/classes</arg>
+                <arg>$MODULE_DIR$/../../../../Stopwatch with Productivity Timer/task/build/intermediates/app_classes/debug/classes.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginClasspaths" />
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+      </configuration>
+    </facet>
+  </component>
+</module>

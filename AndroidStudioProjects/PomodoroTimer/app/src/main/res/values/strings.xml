@@ -1,0 +1,41 @@
+<resources>
+	<string name="app_name">PomodoroTimer</string>
+	<string name="settings">Settings</string>
+	<string name="reset">Reset</string>
+	<string name="time">25:00</string>
+	<string name="play_pause">play pause</string>
+	<string name="pomodoro_progress_2">progress 2</string>
+	<string name="pomodoro_progress_1">progress 1</string>
+	<string name="pomodoro_progress_3">progress 3</string>
+	<string name="pomodoro_progress_4">progress 4</string>
+	<string name="title_activity_settings">SettingsActivity</string>
+	
+	<!-- Preference Titles -->
+	<string name="messages_header">Messages</string>
+	<string name="sync_header">Sync</string>
+	
+	<!-- Messages Preferences -->
+	<string name="signature_title">Your signature</string>
+	<string name="reply_title">Default reply action</string>
+	
+	<!-- Sync Preferences -->
+	<string name="sync_title">Sync email periodically</string>
+	<string name="attachment_title">Download incoming attachments</string>
+	<string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+	<string name="attachment_summary_off">Only download attachments when manually requested</string>
+	<string name="turn_down_value">Turn down Minutes</string>
+	<string name="pomodoro">一个番茄（工作/学习时间）</string>
+	<string name="break_time">小憩</string>
+	<string name="long_break">休息</string>
+	<string name="add_minutes">Add minutes</string>
+	<string name="durations">时间设置</string>
+	<string name="others">其他设置</string>
+	<string name="sound">声音</string>
+	<string name="vibrate">震动</string>
+	<string name="autostart_breaks">自启休息</string>
+	<string name="autostart_pomodoro">自启番茄</string>
+	<string name="keep_phone_awake">保持屏幕唤醒</string>
+	<string name="about">关于</string>
+	<string name="pomodoro_version_1_0">PomodoroTimer\nBy ReganLaw</string>
+	<string name="link_to_git_hub">https://github.com/Regan-Law/Git_Regan/tree/master/AndroidStudioProjects/PomodoroTimer</string>
+</resources>

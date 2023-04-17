@@ -7,7 +7,7 @@
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../Gradle/gradle-8.0.2" />
-        <option name="gradleJvm" value="jbr-17" />
+        <option name="gradleJvm" value="17" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -18,11 +18,13 @@
             <option value="$PROJECT_DIR$/directory" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/menu" />
+            <option value="$PROJECT_DIR$/musicplayer" />
             <option value="$PROJECT_DIR$/pickpeach" />
             <option value="$PROJECT_DIR$/saveqq" />
             <option value="$PROJECT_DIR$/switches" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
