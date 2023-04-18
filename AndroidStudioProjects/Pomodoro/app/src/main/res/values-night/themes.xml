@@ -1,0 +1,23 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Pomodoro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">#FF121212</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/white</item>
+
+        <item name="rippleColor" >#33FFFFFF</item>
+        <item name="textFillColor">#FFA0A0A0</item>
+        <item name="colorPrimaryContainer">#CC080808</item>
+        <item name="colorBackgroundFloating">#FFFFFF</item>
+        <item name="play_pause_background_color">@color/green_40</item>
+    </style>
+</resources>

@@ -1,0 +1,284 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/durations"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pomodoroTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/pomodoro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageButton
+            android:id="@+id/reducePomodoroTimeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ripple_background_button"
+            android:contentDescription="@string/turn_down_value"
+
+            android:src="@drawable/baseline_remove_24"
+            app:layout_constraintBottom_toBottomOf="@+id/pomodoroDurationTextView"
+            app:layout_constraintEnd_toStartOf="@+id/pomodoroDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/pomodoroDurationTextView" />
+
+        <TextView
+            android:id="@+id/pomodoroDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="85dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pomodoroTextView"
+            tools:text="25" />
+
+        <ImageButton
+            android:id="@+id/addPomodoroTimeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/ripple_background_button"
+            android:contentDescription="@string/add_minutes"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="@+id/pomodoroDurationTextView"
+            app:layout_constraintStart_toEndOf="@+id/pomodoroDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/pomodoroDurationTextView" />
+
+
+        <TextView
+            android:id="@+id/shortBreakTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/break_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pomodoroTextView" />
+
+        <ImageButton
+            android:id="@+id/reduceBreakTimeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ripple_background_button"
+            android:contentDescription="@string/turn_down_value"
+            android:src="@drawable/baseline_remove_24"
+            app:layout_constraintBottom_toBottomOf="@+id/breakDurationTextView"
+            app:layout_constraintEnd_toStartOf="@+id/breakDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/breakDurationTextView" />
+
+        <TextView
+            android:id="@+id/breakDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="@+id/pomodoroDurationTextView"
+            app:layout_constraintStart_toStartOf="@+id/pomodoroDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/shortBreakTextView"
+            tools:text="5" />
+
+        <ImageButton
+            android:id="@+id/addBreakTimeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/ripple_background_button"
+            android:contentDescription="@string/add_minutes"
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="@+id/breakDurationTextView"
+            app:layout_constraintStart_toEndOf="@+id/breakDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/breakDurationTextView" />
+
+        <TextView
+            android:id="@+id/longBreakTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/long_break"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shortBreakTextView" />
+
+        <ImageButton
+            android:id="@+id/reduceLongBreakTimeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ripple_background_button"
+            android:contentDescription="@string/turn_down_value"
+
+            android:src="@drawable/baseline_remove_24"
+            app:layout_constraintBottom_toBottomOf="@+id/longBreakDurationTextView"
+            app:layout_constraintEnd_toStartOf="@+id/longBreakDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/longBreakDurationTextView"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/longBreakDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/longBreakTextView"
+            app:layout_constraintEnd_toEndOf="@+id/breakDurationTextView"
+            app:layout_constraintStart_toStartOf="@+id/breakDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/longBreakTextView"
+            app:layout_constraintVertical_bias="0.5"
+            tools:text="15" />
+
+        <ImageButton
+            android:id="@+id/addLongBreakTimeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/ripple_background_button"
+            android:contentDescription="@string/add_minutes"
+
+            android:src="@drawable/baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="@+id/longBreakDurationTextView"
+            app:layout_constraintStart_toEndOf="@+id/longBreakDurationTextView"
+            app:layout_constraintTop_toTopOf="@+id/longBreakDurationTextView"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_margin="20dp"
+
+            android:background="#E7E7E7"
+            app:layout_constraintTop_toBottomOf="@+id/longBreakTextView"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <TextView
+            android:id="@+id/othersTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/others"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <Switch
+            android:id="@+id/soundSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="50dp"
+            android:text="@string/sound"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/othersTextView"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/vibrateSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="50dp"
+            android:text="@string/vibrate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundSwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/autoStartBreaksSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="50dp"
+            android:text="@string/autostart_breaks"
+
+            app:layout_constraintTop_toBottomOf="@+id/vibrateSwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            tools:layout_editor_absoluteX="48dp" />
+
+        <Switch
+            android:id="@+id/autoStartPomodoroSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="50dp"
+            android:text="@string/autostart_pomodoro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autoStartBreaksSwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+        <Switch
+            android:id="@+id/keepPhoneAwakeSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+
+            android:layout_marginEnd="50dp"
+            android:text="@string/keep_phone_awake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autoStartPomodoroSwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_margin="20dp"
+
+            android:background="#E7E7E7"
+            app:layout_constraintTop_toBottomOf="@+id/keepPhoneAwakeSwitch"
+            tools:layout_editor_absoluteX="23dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pomodoro_version_1_0"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2" />
+
+        <ImageButton
+            android:id="@+id/linkToGitHub"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_background_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/git_hub_ico"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:contentDescription="@string/link_to_git_hub" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

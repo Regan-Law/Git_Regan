@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <PreferenceCategory app:title="Others">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Sound" />
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Vibrate" />
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Autostart breaks" />
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Autostart pomodoro" />
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Keep phone awake" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="About">
+
+
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

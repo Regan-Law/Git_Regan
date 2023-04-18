@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity">
+
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/timer_background"
+        android:fontFamily="@font/inter_extralight"
+        android:gravity="center"
+
+        android:textColor="?attr/textFillColor"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="25:00" />
+
+    <ImageButton
+        android:id="@+id/play_pause_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/play_pause_background_button"
+        android:contentDescription="@string/play_pause"
+        android:src="@drawable/baseline_play_arrow_24"
+        app:layout_constraintBottom_toTopOf="@+id/reset_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pomodoro_progress_3"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/reset_button"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/reset_background_button"
+        android:text="@string/reset"
+        android:textColor="@color/gray"
+        android:visibility="invisible"
+        app:icon="@drawable/baseline_refresh_24"
+        app:iconTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ripple_background_button"
+        android:contentDescription="@string/settings"
+        android:src="@drawable/baseline_settings_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/change_duration_button"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reset_background_button"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        app:icon="@drawable/arrows"
+
+        app:iconTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_text_view"
+        tools:text="一个番茄（20分钟）" />
+
+    <ImageView
+        android:id="@+id/pomodoro_progress_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/pomodoro_progress_2"
+        android:padding="10dp"
+        android:src="@drawable/ellipse_disabled"
+        app:layout_constraintBottom_toBottomOf="@+id/pomodoro_progress_3"
+        app:layout_constraintEnd_toStartOf="@+id/pomodoro_progress_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pomodoro_progress_1"
+        app:layout_constraintTop_toTopOf="@+id/pomodoro_progress_3" />
+
+    <ImageView
+        android:id="@+id/pomodoro_progress_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/pomodoro_progress_1"
+        android:padding="10dp"
+        android:src="@drawable/ellipse_disabled"
+        app:layout_constraintBottom_toBottomOf="@+id/pomodoro_progress_2"
+        app:layout_constraintEnd_toStartOf="@+id/pomodoro_progress_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pomodoro_progress_2" />
+
+    <ImageView
+        android:id="@+id/pomodoro_progress_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/pomodoro_progress_3"
+        android:padding="10dp"
+        android:src="@drawable/ellipse_disabled"
+        app:layout_constraintEnd_toStartOf="@+id/pomodoro_progress_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pomodoro_progress_2"
+        app:layout_constraintTop_toBottomOf="@+id/change_duration_button" />
+
+    <ImageView
+        android:id="@+id/pomodoro_progress_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/pomodoro_progress_4"
+        android:padding="10dp"
+        android:src="@drawable/ellipse_disabled"
+        app:layout_constraintBottom_toBottomOf="@+id/pomodoro_progress_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pomodoro_progress_3"
+        app:layout_constraintTop_toTopOf="@+id/pomodoro_progress_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
