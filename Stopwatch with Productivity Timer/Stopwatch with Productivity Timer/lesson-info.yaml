@@ -1,0 +1,8 @@
+type: framework
+content:
+- Stopwatch setup
+- Add functionality
+- Progress bar
+- Custom time limit
+- Friendly reminder
+current_task: 4

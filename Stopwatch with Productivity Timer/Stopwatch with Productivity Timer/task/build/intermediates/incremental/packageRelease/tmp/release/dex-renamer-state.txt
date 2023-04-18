@@ -1,0 +1,4 @@
+#Sat Apr 15 21:18:33 CST 2023
+base.0=D\:\\Regan\\Git_Regan\\Stopwatch with Productivity Timer\\Stopwatch with Productivity Timer\\task\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

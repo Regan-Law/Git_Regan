@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.hyperskill.tests.stopwatch.Stage4UnitTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-04-15T14:34:33" hostname="REGAN-PC" time="1.99">
+  <properties/>
+  <testcase name="test1_ShouldCheckSettingsButtonExist" classname="org.hyperskill.tests.stopwatch.Stage4UnitTest" time="0.124"/>
+  <testcase name="test2_ShouldCheckSettingsButtonEnable" classname="org.hyperskill.tests.stopwatch.Stage4UnitTest" time="0.133"/>
+  <testcase name="test3_ShouldShowAlertDialogOnSettingsButtonClick" classname="org.hyperskill.tests.stopwatch.Stage4UnitTest" time="0.491"/>
+  <testcase name="test4_DialogButtonsShouldContainText" classname="org.hyperskill.tests.stopwatch.Stage4UnitTest" time="0.26"/>
+  <testcase name="test5_ShouldCheckLimitIsNotSetOnCancel" classname="org.hyperskill.tests.stopwatch.Stage4UnitTest" time="0.354"/>
+  <testcase name="test6_ShouldCheckLimitIsSetOnOk" classname="org.hyperskill.tests.stopwatch.Stage4UnitTest" time="0.352"/>
+  <testcase name="test7_ShouldCheckColorsOnRestart" classname="org.hyperskill.tests.stopwatch.Stage4UnitTest" time="0.274"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

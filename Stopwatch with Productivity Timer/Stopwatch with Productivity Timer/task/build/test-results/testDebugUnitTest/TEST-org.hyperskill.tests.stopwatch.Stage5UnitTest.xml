@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.hyperskill.tests.stopwatch.Stage5UnitTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-15T14:34:35" hostname="REGAN-PC" time="1.634">
+  <properties/>
+  <testcase name="test01_CheckNotificationIsNotSentBeforeTimeLimit" classname="org.hyperskill.tests.stopwatch.Stage5UnitTest" time="0.257"/>
+  <testcase name="test02_CheckNotificationIsNotSentWithTimeLimitSetToZero" classname="org.hyperskill.tests.stopwatch.Stage5UnitTest" time="0.327"/>
+  <testcase name="test03_CheckNotificationIsNotSentWithTimeLimitSetToNegative" classname="org.hyperskill.tests.stopwatch.Stage5UnitTest" time="0.415"/>
+  <testcase name="test04_CheckNotificationIsNotSentClickingResetBeforeTimeExceeded" classname="org.hyperskill.tests.stopwatch.Stage5UnitTest" time="0.396"/>
+  <testcase name="test05_CheckNotificationIsSentOnTimeLimitExceeded" classname="org.hyperskill.tests.stopwatch.Stage5UnitTest" time="0.238"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

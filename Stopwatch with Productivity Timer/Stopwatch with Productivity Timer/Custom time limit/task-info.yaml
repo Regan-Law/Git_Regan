@@ -1,0 +1,1204 @@
+type: edu
+files:
+- name: src/main/java/org/hyperskill/stopwatch/MainActivity.kt
+  visible: true
+  text: |-
+    package org.hyperskill.stopwatch
+
+    import android.os.Bundle
+    import androidx.appcompat.app.AppCompatActivity
+
+    class MainActivity : AppCompatActivity() {
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main)
+        }
+    }
+  learner_created: false
+- name: src/main/res/drawable/ic_launcher_background.xml
+  visible: true
+  text: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="108dp"
+        android:height="108dp"
+        android:viewportWidth="108"
+        android:viewportHeight="108">
+        <path
+            android:fillColor="#008577"
+            android:pathData="M0,0h108v108h-108z" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M9,0L9,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M19,0L19,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M29,0L29,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M39,0L39,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M49,0L49,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M59,0L59,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M69,0L69,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M79,0L79,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M89,0L89,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M99,0L99,108"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,9L108,9"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,19L108,19"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,29L108,29"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,39L108,39"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,49L108,49"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,59L108,59"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,69L108,69"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,79L108,79"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,89L108,89"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M0,99L108,99"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M19,29L89,29"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M19,39L89,39"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M19,49L89,49"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M19,59L89,59"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M19,69L89,69"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M19,79L89,79"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M29,19L29,89"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M39,19L39,89"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M49,19L49,89"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M59,19L59,89"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M69,19L69,89"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M79,19L79,89"
+            android:strokeWidth="0.8"
+            android:strokeColor="#33FFFFFF" />
+    </vector>
+  learner_created: false
+- name: src/main/res/drawable-v24/ic_launcher_foreground.xml
+  visible: true
+  text: |
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="108dp"
+        android:height="108dp"
+        android:viewportWidth="108"
+        android:viewportHeight="108">
+        <path
+            android:fillType="evenOdd"
+            android:pathData="M32,64C32,64 38.39,52.99 44.13,50.95C51.37,48.37 70.14,49.57 70.14,49.57L108.26,87.69L108,109.01L75.97,107.97L32,64Z"
+            android:strokeWidth="1"
+            android:strokeColor="#00000000">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:endX="78.5885"
+                    android:endY="90.9159"
+                    android:startX="48.7653"
+                    android:startY="61.0927"
+                    android:type="linear">
+                    <item
+                        android:color="#44000000"
+                        android:offset="0.0" />
+                    <item
+                        android:color="#00000000"
+                        android:offset="1.0" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FFFFFF"
+            android:fillType="nonZero"
+            android:pathData="M66.94,46.02L66.94,46.02C72.44,50.07 76,56.61 76,64L32,64C32,56.61 35.56,50.11 40.98,46.06L36.18,41.19C35.45,40.45 35.45,39.3 36.18,38.56C36.91,37.81 38.05,37.81 38.78,38.56L44.25,44.05C47.18,42.57 50.48,41.71 54,41.71C57.48,41.71 60.78,42.57 63.68,44.05L69.11,38.56C69.84,37.81 70.98,37.81 71.71,38.56C72.44,39.3 72.44,40.45 71.71,41.19L66.94,46.02ZM62.94,56.92C64.08,56.92 65,56.01 65,54.88C65,53.76 64.08,52.85 62.94,52.85C61.8,52.85 60.88,53.76 60.88,54.88C60.88,56.01 61.8,56.92 62.94,56.92ZM45.06,56.92C46.2,56.92 47.13,56.01 47.13,54.88C47.13,53.76 46.2,52.85 45.06,52.85C43.92,52.85 43,53.76 43,54.88C43,56.01 43.92,56.92 45.06,56.92Z"
+            android:strokeWidth="1"
+            android:strokeColor="#00000000" />
+    </vector>
+  learner_created: false
+- name: src/main/res/layout/activity_main.xml
+  visible: true
+  text: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello world!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  learner_created: false
+- name: src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+  visible: true
+  text: |-
+    <?xml version="1.0" encoding="utf-8"?>
+    <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+        <background android:drawable="@drawable/ic_launcher_background" />
+        <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    </adaptive-icon>
+  learner_created: false
+- name: src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+  visible: true
+  text: |-
+    <?xml version="1.0" encoding="utf-8"?>
+    <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+        <background android:drawable="@drawable/ic_launcher_background" />
+        <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    </adaptive-icon>
+  learner_created: false
+- name: src/main/res/values/colors.xml
+  visible: true
+  text: |
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="colorPrimary">#008577</color>
+        <color name="colorPrimaryDark">#00574B</color>
+        <color name="colorAccent">#D81B60</color>
+    </resources>
+  learner_created: false
+- name: src/main/res/values/strings.xml
+  visible: true
+  text: |
+    <resources>
+        <string name="app_name">Stopwatch with Productivity Timer</string>
+    </resources>
+  learner_created: false
+- name: src/main/res/values/styles.xml
+  visible: true
+  text: |
+    <resources>
+
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+    </resources>
+  learner_created: false
+- name: src/main/AndroidManifest.xml
+  visible: true
+  text: |-
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="org.hyperskill.stopwatch">
+
+      <application
+          android:allowBackup="true"
+          android:icon="@mipmap/ic_launcher"
+          android:label="@string/app_name"
+          android:roundIcon="@mipmap/ic_launcher_round"
+          android:supportsRtl="true"
+          android:theme="@style/AppTheme">
+        <activity android:name="org.hyperskill.stopwatch.MainActivity">
+          <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+        </activity>
+      </application>
+
+    </manifest>
+  learner_created: false
+- name: build.gradle
+  visible: true
+  text: |-
+    apply plugin: 'com.android.application'
+    apply plugin: 'kotlin-android'
+
+    android {
+        compileSdkVersion hs.android.compileSdkVersion
+
+        defaultConfig {
+
+            applicationId "org.hyperskill.stopwatch"
+            minSdkVersion hs.android.minSdkVersion
+            targetSdkVersion hs.android.targetSdkVersion
+            versionCode 1
+            versionName '1.0'
+        }
+
+        buildFeatures {
+            viewBinding true
+        }
+    }
+
+    dependencies {
+        def kotlinVersion = hs.android.kotlinVersion
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+
+        def coreKtx = hs.android.lib.coreKtx
+        implementation "androidx.core:core-ktx:$coreKtx"
+
+        def appCompat = hs.android.lib.appCompat
+        implementation "androidx.appcompat:appcompat:$appCompat"
+
+        def constraintLayout = hs.android.lib.constraintLayout
+        implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+
+        def material = hs.android.lib.material
+        implementation "com.google.android.material:material:$material"
+    }
+  learner_created: false
+- name: src/test/java/org/hyperskill/tests/stopwatch/internals/AbstractUnitTest.kt
+  visible: false
+  text: |-
+    package org.hyperskill.tests.stopwatch.internals
+
+    import android.app.Activity
+    import android.app.AlertDialog
+    import android.app.Dialog
+    import android.content.Intent
+    import android.os.Bundle
+    import android.view.View
+    import org.junit.Assert
+    import org.junit.Assert.assertNotNull
+    import org.junit.Assert.assertTrue
+    import org.robolectric.Robolectric
+    import org.robolectric.Shadows.shadowOf
+    import org.robolectric.android.controller.ActivityController
+    import org.robolectric.shadow.api.Shadow
+    import org.robolectric.shadows.ShadowActivity
+    import org.robolectric.shadows.ShadowAlertDialog
+    import org.robolectric.shadows.ShadowLooper
+    import org.robolectric.shadows.ShadowToast
+    import java.time.Duration
+
+    abstract class AbstractUnitTest<T : Activity>(clazz: Class<T>) {
+
+        /**
+         * Setup and control activities and their lifecycle
+         */
+        val activityController: ActivityController<T> by lazy {
+            Robolectric.buildActivity(clazz)
+        }
+
+        /**
+         * The activity being tested.
+         *
+         * It is the @RealObject of the shadowActivity
+         */
+        val activity : Activity by lazy {
+            activityController.get()
+        }
+
+        /**
+         * A Roboletric shadow object of the Activity class, contains helper methods to deal with
+         * testing activities like setting permissions, peeking results of launched activities for result,
+         * retrieving shown dialogs, intents and others.
+         *
+         * If you don't know what shadows are you can have a better understanding on that reading this
+         * on roboletric documentation: http://robolectric.org/extending/
+         *
+         * Understanding Shadows is fundamental for Roboletric, things are not what they appear to be on
+         * Roboletric because running a code on the jvm is not the same as running the code on a real/emulated device.
+         * Code that expects to eventually talk to the machine won't have the machine they expect to have to talk to.
+         * Shadow is how Roboletric makes things possible, they impersonate @RealObject and act when @RealObject is expected to act.
+         *
+         * Things in Roboletric are not what they appear to be.
+         * It is possible to not notice it for the most part, but it will be essential for some other parts
+         */
+        val shadowActivity: ShadowActivity by lazy {
+            Shadow.extract(activity)
+        }
+
+        /**
+         * A Roboletric shadow object of the mainLooper. Handles enqueued runnables and also the passage of time.
+         *
+         * Usually used with .idleFor(someDurationValue) or .runToEndOfTasks()
+         */
+        val shadowLooper: ShadowLooper by lazy {
+            shadowOf(activity.mainLooper)
+        }
+
+        /**
+         * Decorate your test code with this method to ensure better error messages displayed
+         * when tests are run with check button and exceptions are thrown by user implementation.
+         *
+         * returns a value for convenience use, like in tests that involve navigation between Activities
+         */
+        fun <ReturnValue> testActivity(arguments: Intent = Intent(), savedInstanceState: Bundle = Bundle(), testCodeBlock: (Activity) -> ReturnValue): ReturnValue {
+            try {
+                activity.intent =  arguments
+                activityController.setup(savedInstanceState)
+            } catch (ex: Exception) {
+                throw AssertionError("Exception, test failed on activity creation with $ex\n${ex.stackTraceToString()}")
+            }
+
+            return try {
+                testCodeBlock(activity)
+            } catch (ex: Exception) {
+                throw AssertionError("Exception. Test failed on activity execution with $ex\n${ex.stackTraceToString()}")
+            }
+        }
+
+        /**
+         * Use this method to find views.
+         *
+         * The view existence will be assert before being returned
+         */
+        inline fun <reified T> Activity.findViewByString(idString: String): T {
+            val id = this.resources.getIdentifier(idString, "id", this.packageName)
+            val view: View? = this.findViewById(id)
+
+            val idNotFoundMessage = "View with id \"$idString\" was not found"
+            val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                    "Expected ${T::class.java.simpleName} found ${view?.javaClass?.simpleName}"
+
+            assertNotNull(idNotFoundMessage, view)
+            assertTrue(wrongClassMessage, view is T)
+
+            return view as T
+        }
+
+        /**
+         * Use this method to find views.
+         *
+         * The view existence will be assert before being returned
+         */
+        inline fun <reified T> View.findViewByString(idString: String): T {
+            val id = this.resources.getIdentifier(idString, "id", context.packageName)
+            val view: View? = this.findViewById(id)
+
+            val idNotFoundMessage = "View with id \"$idString\" was not found"
+            val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                    "Expected ${T::class.java.simpleName} found ${view?.javaClass?.simpleName}"
+
+            assertNotNull(idNotFoundMessage, view)
+            assertTrue(wrongClassMessage, view is T)
+
+            return view as T
+        }
+
+        /**
+         * Use this method to find views.
+         *
+         * The view existence will be assert before being returned
+         */
+        inline fun <reified T> Dialog.findViewByString(idString: String): T {
+            val id = this.context.resources.getIdentifier(idString, "id", this.context.packageName)
+            val view: View? = this.findViewById(id)
+
+            val idNotFoundMessage = "View with id \"$idString\" was not found"
+            val wrongClassMessage = "View with id \"$idString\" is not from expected class. " +
+                    "Expected ${T::class.java.simpleName} found ${view?.javaClass?.simpleName}"
+
+            assertNotNull(idNotFoundMessage, view)
+            assertTrue(wrongClassMessage, view is T)
+
+            return view as T
+        }
+
+        /**
+         * Use this method to perform clicks. It will also advance the clock millis milliseconds and run
+         * enqueued Runnable scheduled to run on main looper in that timeframe.
+         * Default value for millis is 500
+         *
+         * Internally it calls performClick() and shadowLooper.idleFor(millis)
+         */
+        fun View.clickAndRun(millis: Long = 500){
+            this.performClick()
+            shadowLooper.idleFor(Duration.ofMillis(millis))
+        }
+
+        /**
+         * Asserts that the last message toasted is the expectedMessage.
+         * Assertion fails if no toast is shown with null actualLastMessage value.
+         */
+        fun assertLastToastMessageEquals(errorMessage: String, expectedMessage: String,) {
+            val actualLastMessage: String? = ShadowToast.getTextOfLatestToast()
+            Assert.assertEquals(errorMessage, expectedMessage, actualLastMessage)
+        }
+
+        /**
+         * Use this method to retrieve the latest AlertDialog.
+         *
+         * The existence of such AlertDialog will be asserted before returning.
+         *
+         * Robolectric only supports android.app.AlertDialog, test will not be
+         * able to find androidx.appcompat.app.AlertDialog.
+         *
+         * - Important!!! :
+         * When writing stage description state explicitly the correct version that should be imported
+         */
+        fun getLatestDialog(): AlertDialog {
+            val latestAlertDialog = ShadowAlertDialog.getLatestAlertDialog()
+
+            assertNotNull(
+                "There was no AlertDialog found. Make sure to import android.app.AlertDialog version",
+                latestAlertDialog
+            )
+
+            return latestAlertDialog!!
+        }
+    }
+  learner_created: false
+- name: src/test/java/org/hyperskill/tests/stopwatch/internals/CustomShadowCountDownTimer.kt
+  visible: false
+  text: |-
+    package org.hyperskill.tests.stopwatch.internals
+
+    import android.os.CountDownTimer
+    import android.os.Handler
+    import org.robolectric.annotation.Implementation
+    import org.robolectric.annotation.Implements
+    import org.robolectric.annotation.RealObject
+    import org.robolectric.shadow.api.Shadow
+    import org.robolectric.util.ReflectionHelpers.ClassParameter
+
+    // adapted from ShadowCountDownTimer
+    // https://github.com/robolectric/robolectric/blob/master/shadows/framework/src/main/java/org/robolectric/shadows/ShadowCountDownTimer.java
+    @Implements(CountDownTimer::class)
+    class CustomShadowCountDownTimer {
+
+        companion object {
+            var handler: Handler? = null
+        }
+
+        private var started = false
+        var countDownInterval: Long = 0
+            private set
+        var millisInFuture: Long = 0
+            private set
+
+        var millisUntilFinished: Long = 0
+
+        val runnable: Runnable = Runnable {
+            invokeTick(millisUntilFinished)
+        }
+
+        @RealObject
+        var countDownTimer: CountDownTimer? = null
+
+        @Implementation
+        protected fun __constructor__(millisInFuture: Long, countDownInterval: Long) {
+            this.countDownInterval = countDownInterval
+            this.millisInFuture = millisInFuture
+            this.millisUntilFinished = millisInFuture
+            started = false
+            Shadow.invokeConstructor(
+                CountDownTimer::class.java,
+                countDownTimer,
+                ClassParameter.from(Long::class.javaPrimitiveType, millisInFuture),
+                ClassParameter.from(Long::class.javaPrimitiveType, countDownInterval))
+        }
+
+        @Implementation
+        @Synchronized
+        protected fun start(): CountDownTimer? {
+            started = true
+            handler?.post(runnable)
+            return countDownTimer
+        }
+
+        @Implementation
+        protected fun cancel() {
+            started = false
+            handler?.removeCallbacks(runnable)
+        }
+
+        fun invokeTick(millisUntilFinished: Long) {
+            countDownTimer!!.onTick(millisUntilFinished)
+            this.millisUntilFinished = this.millisUntilFinished - countDownInterval
+            if(this.millisUntilFinished >= 0) {
+                handler?.postDelayed(runnable, countDownInterval)
+            } else {
+                invokeFinish()
+            }
+        }
+
+        fun invokeFinish() {
+            countDownTimer!!.onFinish()
+        }
+
+        fun hasStarted(): Boolean {
+            return started
+        }
+    }
+  learner_created: false
+- name: src/test/java/org/hyperskill/tests/stopwatch/internals/StopwatchUnitTest.kt
+  visible: false
+  text: |-
+    package org.hyperskill.tests.stopwatch.internals
+
+    import android.app.Activity
+    import android.app.AlarmManager
+    import android.os.Handler
+    import android.os.SystemClock
+    import androidx.core.content.getSystemService
+    import org.robolectric.Shadows
+    import org.robolectric.shadows.ShadowAlarmManager
+
+    open class StopwatchUnitTest<T: Activity>(clazz: Class<T>) : AbstractUnitTest<T>(clazz)  {
+        fun supportForAlarmManager() {
+            val alarmManager = activity.getSystemService<AlarmManager>()
+            val shadowAlarmManager: ShadowAlarmManager = Shadows.shadowOf(alarmManager)
+            shadowAlarmManager.scheduledAlarms.lastOrNull()?.also {
+                if(it.operation != null) {
+                    val pendingIntent = Shadows.shadowOf(it.operation)
+                    if(it.triggerAtTime < SystemClock.currentGnssTimeClock().millis()) {
+                        it.operation.intentSender.sendIntent(
+                            pendingIntent.savedContext,
+                            pendingIntent.requestCode,
+                            pendingIntent.savedIntent,
+                            null,
+                            Handler(activity.mainLooper)
+                        )
+                    }
+                } else if(it.onAlarmListener != null) {
+                    if(it.triggerAtTime < SystemClock.currentGnssTimeClock().millis()) {
+                        it.onAlarmListener.onAlarm()
+                    }
+                }
+            }
+        }
+    }
+  learner_created: false
+- name: src/test/java/org/hyperskill/tests/stopwatch/Stage2UnitTest.kt
+  visible: false
+  text: |-
+    package org.hyperskill.tests.stopwatch
+
+    import android.os.Handler
+    import android.widget.Button
+    import android.widget.TextView
+    import org.hyperskill.stopwatch.MainActivity
+    import org.hyperskill.tests.stopwatch.internals.CustomShadowCountDownTimer
+    import org.hyperskill.tests.stopwatch.internals.StopwatchUnitTest
+    import org.junit.Assert.assertEquals
+    import org.junit.Before
+    import org.junit.Test
+    import org.junit.runner.RunWith
+    import org.robolectric.RobolectricTestRunner
+    import org.robolectric.annotation.Config
+
+    // Version 2.0
+    @Config(instrumentedPackages = ["org.hyperskill.stopwatch"], shadows = [CustomShadowCountDownTimer::class])
+    @RunWith(RobolectricTestRunner::class)
+    class Stage2UnitTest : StopwatchUnitTest<MainActivity>(MainActivity::class.java) {
+
+
+        private val startButton: Button by lazy {
+            val view = activity.findViewByString<Button>("startButton")
+
+            val message = "For view with id \"startButton\", in property \"text\""
+            assertEquals(message, "start", view.text.toString().lowercase())
+
+            view
+        }
+
+        private val resetButton: Button by lazy {
+            val view = activity.findViewByString<Button>("resetButton")
+
+            val message = "For view with id \"resetButton\", in property \"text\""
+            assertEquals(message, "reset", view.text.toString().lowercase())
+
+            view
+        }
+
+        private val textView: TextView by lazy {
+            activity.findViewByString("textView")
+        }
+
+        private val messageTextViewAssertionError = "For view with id \"textView\", in property \"text\""
+
+        @Before
+        fun setup() {
+            CustomShadowCountDownTimer.handler = Handler(activity.mainLooper)
+        }
+
+        @Test
+        fun checkCheckTimerInitialValue() {
+            testActivity {
+                val expected = "00:00"
+                val actual = textView.text
+                val message = "Wrong initial value. $messageTextViewAssertionError"
+                assertEquals(message, expected, actual)
+            }
+        }
+
+        @Test
+        fun checkTakeOneSecondToCountOneSecondOnStartButtonClick() {
+            testActivity {
+                val expected = "00:00"
+
+                startButton.clickAndRun(300)
+
+                val actual = textView.text
+                val message = "It should take one second to count one second. $messageTextViewAssertionError"
+                assertEquals(message, expected, actual)
+            }
+        }
+
+        @Test
+        fun checkCountOneSecondAfterOneSecondOnStartButtonClick() {
+            testActivity {
+                val expected = "00:01"
+
+                startButton.clickAndRun(1100)
+
+                val actual = textView.text
+                val message = "After one second one second should be counted. $messageTextViewAssertionError"
+                assertEquals(message, expected, actual)
+            }
+        }
+
+
+        @Test
+        fun checkStopTimerAndResetCountOnResetButtonClick() {
+            testActivity {
+                val expected = "00:00"
+
+                startButton.clickAndRun(1100)
+                resetButton.clickAndRun(200)
+
+                val actual = textView.text
+                val message = "After reset the counter should reset. $messageTextViewAssertionError"
+                assertEquals(message, expected, actual)
+            }
+        }
+
+        @Test
+        fun checkContinueCountOnPressingStartButtonAgain() {
+            testActivity {
+                val expected = "00:11"
+                startButton.clickAndRun(1100)
+
+                startButton.performClick()
+                startButton.performClick()
+                startButton.clickAndRun(10_100)
+
+                val actual = textView.text
+                val message = "Clicking start multiple times should still count one second per second. " +
+                        messageTextViewAssertionError
+                assertEquals(message, expected, actual)
+            }
+        }
+
+        @Test
+        fun checkIgnorePressingResetButtonAgain() {
+            testActivity {
+                val expected = "00:00"
+
+                startButton.clickAndRun(10_000)
+                resetButton.clickAndRun(10_000)
+                resetButton.clickAndRun(10_000)
+
+                val actual = textView.text
+                val message =
+                    "Clicking reset multiple times should still keep counter reset. " +
+                            messageTextViewAssertionError
+                assertEquals(message, expected, actual)
+            }
+        }
+
+        @Test
+        fun checkDisplayOneMinuteInsteadOf60Seconds() {
+            testActivity {
+                val expected = "01:00"
+
+                startButton.clickAndRun(60_100)
+
+                val actual = textView.text
+                val message = "60 seconds should be one minute. $messageTextViewAssertionError"
+                assertEquals(message, expected, actual)
+            }
+        }
+
+        @Test
+        fun checkMinuteIsNotEarly() {
+            testActivity {
+                val expected = "01:59"
+
+                startButton.clickAndRun(119_700)
+
+                val actual = textView.text
+                assertEquals("Don't rush on counting. $messageTextViewAssertionError", expected, actual)
+            }
+        }
+    }
+  learner_created: false
+- name: src/test/java/org/hyperskill/tests/stopwatch/Stage3UnitTest.kt
+  visible: false
+  text: |-
+    package org.hyperskill.tests.stopwatch
+
+    import android.os.Handler
+    import android.view.View
+    import android.widget.Button
+    import android.widget.ProgressBar
+    import android.widget.TextView
+    import org.hyperskill.stopwatch.MainActivity
+    import org.hyperskill.tests.stopwatch.internals.CustomShadowCountDownTimer
+    import org.hyperskill.tests.stopwatch.internals.StopwatchUnitTest
+    import org.junit.Assert.*
+    import org.junit.Before
+    import org.junit.Test
+    import org.junit.runner.RunWith
+    import org.robolectric.RobolectricTestRunner
+    import org.robolectric.annotation.Config
+    import java.util.concurrent.TimeUnit
+
+    // Version 2.0
+    @Config(instrumentedPackages = ["org.hyperskill.stopwatch"], shadows = [CustomShadowCountDownTimer::class])
+    @RunWith(RobolectricTestRunner::class)
+    class Stage3UnitTest : StopwatchUnitTest<MainActivity>(MainActivity::class.java) {
+
+
+        private val startButton: Button by lazy {
+            val view = activity.findViewByString<Button>("startButton")
+
+            val message = "For view with id \"startButton\", in property \"text\""
+            assertEquals(message, "start", view.text.toString().lowercase())
+
+            view
+        }
+
+        private val resetButton: Button by lazy {
+            val view = activity.findViewByString<Button>("resetButton")
+
+            val message = "For view with id \"resetButton\", in property \"text\""
+            assertEquals(message, "reset", view.text.toString().lowercase())
+
+            view
+        }
+
+        private val textView: TextView by lazy {
+            activity.findViewByString("textView")
+        }
+
+        private val progressBar: ProgressBar by lazy {
+            activity.findViewByString("progressBar")
+        }
+
+        private val messageInvalidVisibility =
+            "invalid progress bar visibility (VISIBLE = 0, INVISIBLE = 4, GONE = 8)"
+
+        private val messageInvalidColor = "invalid progress bar color. LastColor: %d"
+
+        @Before
+        fun setup() {
+            CustomShadowCountDownTimer.handler = Handler(activity.mainLooper)
+        }
+
+        @Test
+        fun checkProgressBarExists() {
+            testActivity {
+                progressBar
+            }
+        }
+
+        @Test
+        fun checkProgressBarInvisibilityOnInit() {
+            testActivity {
+                val unexpected = View.VISIBLE
+                val actual = progressBar.visibility
+                assertNotEquals(messageInvalidVisibility, unexpected, actual)
+            }
+        }
+
+        @Test
+        fun checkProgressBarVisibilityOnStart() {
+            testActivity {
+                val expected = View.VISIBLE
+
+                startButton.clickAndRun()
+
+                val actual = progressBar.visibility
+                assertEquals(messageInvalidVisibility, expected, actual)
+            }
+
+        }
+
+        @Test
+        fun checkProgressBarInvisibilityOnReset() {
+            testActivity {
+                val expectAfterStart = View.VISIBLE
+                val unexpectedAfterReset = View.VISIBLE
+
+                startButton.clickAndRun()
+
+                val actualAfterStart = progressBar.visibility
+                assertEquals(messageInvalidVisibility, expectAfterStart, actualAfterStart)
+
+                resetButton.clickAndRun()
+
+                val actualAfterReset = progressBar.visibility
+                assertNotEquals(messageInvalidVisibility, unexpectedAfterReset, actualAfterReset)
+            }
+
+        }
+
+        @Test
+        fun checkMultipleClicks() {
+            testActivity {
+                val expectedAfterStart = View.VISIBLE
+                val unexpectedAfterReset = View.VISIBLE
+
+                startButton.clickAndRun()
+                startButton.clickAndRun()
+
+                val actualAfterStart = progressBar.visibility
+                assertEquals(messageInvalidVisibility, expectedAfterStart, actualAfterStart)
+
+                resetButton.clickAndRun()
+                resetButton.clickAndRun()
+
+
+                val actualAfterReset = progressBar.visibility
+                assertNotEquals(messageInvalidVisibility, unexpectedAfterReset, actualAfterReset)
+            }
+
+        }
+
+        @Test
+        fun checkProgressBarColorEachSecond() {
+            testActivity {
+                startButton.clickAndRun(100)
+
+                var lastColor: Int? = progressBar.indeterminateTintList?.defaultColor
+
+                for (i in 0 until 10) {
+                    shadowLooper.idleFor(1_000, TimeUnit.MILLISECONDS)
+
+                    val actualColor = progressBar.indeterminateTintList?.defaultColor
+
+                    if(lastColor == actualColor) {
+                        shadowLooper.runToEndOfTasks() // to prevent this misleading message since this in not the cause of test failure: java.lang.Exception: Main looper has queued unexecuted runnables. This might be the cause of the test failure. You might need a shadowOf(getMainLooper()).idle() call.
+                        fail("$messageInvalidColor\nLastColor: $lastColor\nCurrentColor: $actualColor")
+                    }
+
+                    lastColor = actualColor
+                }
+            }
+        }
+    }
+  learner_created: false
+- name: src/test/java/org/hyperskill/tests/stopwatch/Stage4UnitTest.kt
+  visible: false
+  text: |-
+    package org.hyperskill.tests.stopwatch
+
+    import android.app.AlertDialog
+    import android.graphics.Color
+    import android.os.Handler
+    import android.widget.Button
+    import android.widget.EditText
+    import android.widget.TextView
+    import org.hyperskill.stopwatch.MainActivity
+    import org.hyperskill.tests.stopwatch.internals.CustomShadowCountDownTimer
+    import org.hyperskill.tests.stopwatch.internals.StopwatchUnitTest
+    import org.junit.Assert.*
+    import org.junit.Before
+    import org.junit.FixMethodOrder
+    import org.junit.Test
+    import org.junit.runner.RunWith
+    import org.junit.runners.MethodSorters
+    import org.robolectric.RobolectricTestRunner
+    import org.robolectric.annotation.Config
+    import java.util.concurrent.TimeUnit
+
+    // Version 2.0
+    @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+    @Config(instrumentedPackages = ["org.hyperskill.stopwatch"], shadows = [CustomShadowCountDownTimer::class])
+    @RunWith(RobolectricTestRunner::class)
+    class Stage4UnitTest : StopwatchUnitTest<MainActivity>(MainActivity::class.java) {
+
+
+        private val startButton: Button by lazy {
+            val view = activity.findViewByString<Button>("startButton")
+
+            val message = "For view with id \"startButton\", in property \"text\""
+            assertEquals(message, "start", view.text.toString().lowercase())
+
+            view
+        }
+
+        private val resetButton: Button by lazy {
+            val view = activity.findViewByString<Button>("resetButton")
+
+            val message = "For view with id \"resetButton\", in property \"text\""
+            assertEquals(message, "reset", view.text.toString().lowercase())
+
+            view
+        }
+
+        private val settingsButton: Button by lazy {
+            val view = activity.findViewByString<Button>("settingsButton")
+
+            val message = "For view with id \"settingsButton\", in property \"text\""
+            assertEquals(message, "settings", view.text.toString().lowercase())
+
+            view
+        }
+
+        private val textView: TextView by lazy {
+            activity.findViewByString("textView")
+        }
+
+
+        @Before
+        fun setup() {
+            CustomShadowCountDownTimer.handler = Handler(activity.mainLooper)
+        }
+
+        @Test
+        fun test1_ShouldCheckSettingsButtonExist() {
+            testActivity {
+                settingsButton
+            }
+        }
+
+        @Test
+        fun test2_ShouldCheckSettingsButtonEnable() {
+            testActivity {
+                val message1 = "view with id \"settingsButton\" should be enabled when timer is stopped"
+                assertTrue(message1, settingsButton.isEnabled)
+
+                startButton.clickAndRun()
+
+                val message2 = "view with id \"settingsButton\" should be disabled when timer is running"
+                assertFalse(message2, settingsButton.isEnabled)
+
+                resetButton.clickAndRun()
+                assertTrue(message1, settingsButton.isEnabled)
+            }
+        }
+
+        @Test
+        fun test3_ShouldShowAlertDialogOnSettingsButtonClick() {
+            testActivity {
+                settingsButton.clickAndRun()
+                getLatestDialog()
+
+            }
+        }
+
+        @Test
+        fun test4_DialogButtonsShouldContainText() {
+            testActivity {
+                val expectedOk = "ok"
+                val expectedCancel = "cancel"
+
+                settingsButton.clickAndRun()
+                val dialog = getLatestDialog()
+
+                val actualOk = dialog.getButton(AlertDialog.BUTTON_POSITIVE).text.toString().lowercase()
+                assertEquals("positive button contains wrong text", expectedOk, actualOk)
+
+                val actualCancel = dialog.getButton(AlertDialog.BUTTON_NEGATIVE).text.toString().lowercase()
+                assertEquals("negative button contains wrong text", expectedCancel, actualCancel)
+            }
+
+        }
+
+        @Test
+        fun test5_ShouldCheckLimitIsNotSetOnCancel() {
+            testActivity {
+                val secondsToCount = 2
+
+                settingsButton.clickAndRun()
+                val dialog = getLatestDialog()
+
+                val upperLimitEditText = dialog.findViewByString<EditText>("upperLimitEditText")
+                upperLimitEditText.setText("$secondsToCount")
+
+                dialog.getButton(AlertDialog.BUTTON_NEGATIVE).clickAndRun()
+                val sleepTime = secondsToCount * 1000 + 1300L
+
+                startButton.clickAndRun(sleepTime)
+
+                val message = "\"textView\" color should not be RED if limit has not been set"
+                val actual = textView.currentTextColor
+                assertNotEquals(message, Color.RED, actual)
+            }
+
+        }
+
+        @Test
+        fun test6_ShouldCheckLimitIsSetOnOk() {
+            testActivity {
+                val secondsToCount = 2L
+
+                settingsButton.clickAndRun()
+                val dialog = getLatestDialog()
+
+                dialog.findViewByString<EditText>("upperLimitEditText").setText("$secondsToCount")
+                dialog.getButton(AlertDialog.BUTTON_POSITIVE).clickAndRun()
+
+                startButton.clickAndRun()
+
+                val messageBefore = "\"textView\" color should not be RED before limit is reached"
+                val actualBefore = textView.currentTextColor
+                assertNotEquals(messageBefore, Color.RED, actualBefore)
+
+                val sleepTime = secondsToCount * 1000L + 1000L
+                shadowLooper.idleFor(sleepTime, TimeUnit.MILLISECONDS)
+
+                val messageAfter = "\"textView\" color should be RED after limit is reached"
+                val actualAfter = textView.currentTextColor
+                assertEquals(messageAfter, Color.RED, actualAfter)
+            }
+
+        }
+
+        @Test
+        fun test7_ShouldCheckColorsOnRestart() {
+            testActivity {
+                val secondsToCount = 2L
+
+                settingsButton.clickAndRun()
+                val dialog = getLatestDialog()
+
+                dialog.findViewByString<EditText>("upperLimitEditText").setText("$secondsToCount")
+                dialog.getButton(AlertDialog.BUTTON_POSITIVE).clickAndRun()
+
+                val timeToSleep = secondsToCount * 1000L + 1300L
+                startButton.clickAndRun(timeToSleep)
+
+                val messageAfter = "\"textView\" color should be RED after limit is reached"
+                val actualAfter = textView.currentTextColor
+                assertEquals(messageAfter, Color.RED, actualAfter)
+
+                resetButton.clickAndRun()
+                startButton.clickAndRun()
+
+                val messageBefore = "\"textView\" color should not be RED before limit is reached"
+                val actualBefore = textView.currentTextColor
+                assertNotEquals(messageBefore, Color.RED, actualBefore)
+            }
+        }
+    }
+  learner_created: false
+- name: src/main/res/layout/alertdialog.xml
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/9289#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 13 Apr 2023 11:44:11 UTC"
+record: 4

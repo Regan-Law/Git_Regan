@@ -1,0 +1,327 @@
+hyperskill_project:
+  id: 72
+  ide_files: https://stepik.org/media/attachments/lesson/328598/additional_files.json
+  is_template_based: false
+  use_ide: true
+  environment: android
+update_date: "Sat, 15 Apr 2023 14:36:03 UTC"
+stages:
+- id: 394
+  step: 9286
+  is_completed: true
+- id: 395
+  step: 27286
+  is_completed: true
+- id: 396
+  step: 27287
+  is_completed: true
+- id: 397
+  step: 9289
+  is_completed: true
+- id: 398
+  step: 9290
+  is_completed: true
+topics:
+  0:
+  - title: Binary numbers
+    theory_id: 5544
+  - title: Hexadecimal numbers
+    theory_id: 8788
+  - title: "Write, compile, and run"
+    theory_id: 3739
+  - title: "JVM, JRE, and JDK"
+    theory_id: 3499
+  - title: Interface elements
+    theory_id: 15253
+  - title: Input fields and field labels
+    theory_id: 15447
+  - title: Fonts
+    theory_id: 15045
+  - title: Feedback
+    theory_id: 15308
+  - title: Units of information
+    theory_id: 6865
+  - title: IDE
+    theory_id: 10996
+  - title: Introduction to Operating systems
+    theory_id: 9704
+  - title: Command line overview
+    theory_id: 8977
+  - title: Parameters and Options
+    theory_id: 9746
+  - title: Computer algorithms
+    theory_id: 16547
+  - title: The big O notation
+    theory_id: 16699
+  - title: "Best, average and worst cases"
+    theory_id: 20084
+  - title: Data structures
+    theory_id: 16927
+  - title: Handlers
+    theory_id: 13046
+  - title: Computer programming
+    theory_id: 8739
+  - title: Paradigms
+    theory_id: 15860
+  - title: Introduction to Kotlin
+    theory_id: 4350
+  - title: Basic literals
+    theory_id: 4351
+  - title: Overview of the basic program
+    theory_id: 4362
+  - title: Values and variables
+    theory_id: 4371
+  - title: Val variables
+    theory_id: 17408
+  - title: Data types
+    theory_id: 4388
+  - title: Comments
+    theory_id: 4406
+  - title: Coding style conventions
+    theory_id: 4419
+  - title: Naming variables
+    theory_id: 4389
+  - title: The classification of basic types
+    theory_id: 4455
+  - title: Type conversion
+    theory_id: 4672
+  - title: Standard output
+    theory_id: 4425
+  - title: Invoking functions
+    theory_id: 4575
+  - title: Standard input with Java Scanner
+    theory_id: 4445
+  - title: Reading data with a readln
+    theory_id: 11224
+  - title: String basics
+    theory_id: 12553
+  - title: String templates
+    theory_id: 4547
+  - title: Boolean and logical operations
+    theory_id: 4515
+  - title: Arithmetic operations
+    theory_id: 4472
+  - title: Type of the numeric expression
+    theory_id: 9506
+  - title: Increment and decrement
+    theory_id: 10776
+  - title: Integers in action
+    theory_id: 4488
+  - title: Relational operators
+    theory_id: 4525
+  - title: Declaring functions
+    theory_id: 4580
+  - title: If expression
+    theory_id: 4625
+  - title: Errors in programs
+    theory_id: 11559
+  - title: Nullable and non-nullable types
+    theory_id: 7613
+  - title: Type system
+    theory_id: 9689
+  - title: Repeating blocks
+    theory_id: 4643
+  - title: While loops
+    theory_id: 4659
+  - title: Introduction to OOP
+    theory_id: 3614
+  - title: Build tools
+    theory_id: 4284
+  - title: Java Archive
+    theory_id: 4311
+  - title: Gradle basics
+    theory_id: 5075
+  - title: Basic project with Gradle
+    theory_id: 5077
+  - title: Building apps using Gradle
+    theory_id: 7917
+  - title: Dependency management
+    theory_id: 5076
+  - title: Objects
+    theory_id: 11233
+  - title: Declaring classes
+    theory_id: 6200
+  - title: Equality
+    theory_id: 11236
+  - title: Unicode
+    theory_id: 7899
+  - title: Characters
+    theory_id: 4680
+  - title: Ranges
+    theory_id: 4633
+  - title: When expression
+    theory_id: 4631
+  - title: Functional decomposition
+    theory_id: 12668
+  - title: Default arguments
+    theory_id: 4637
+  - title: Named arguments
+    theory_id: 4640
+  - title: Constructors
+    theory_id: 10740
+  - title: Member functions
+    theory_id: 6364
+  - title: Introduction to MutableList
+    theory_id: 14879
+  - title: For loop and ranges
+    theory_id: 4652
+  - title: Work with MutableLists
+    theory_id: 14902
+  - title: For loop and lists
+    theory_id: 15022
+  - title: Introduction to collections
+    theory_id: 10390
+  - title: List
+    theory_id: 10730
+  - title: Mutable List
+    theory_id: 11032
+  - title: Working with strings
+    theory_id: 12561
+  - title: Functions as objects
+    theory_id: 5991
+  - title: Lambda expressions
+    theory_id: 6154
+  - title: Android studio basics
+    theory_id: 11048
+  - title: API Levels
+    theory_id: 11312
+  - title: External resources
+    theory_id: 6216
+  - title: Pseudocode
+    theory_id: 15090
+  - title: Pseudocode basics
+    theory_id: 19510
+  - title: Complex constructions in pseudocode
+    theory_id: 20922
+  - title: Stack
+    theory_id: 5252
+  - title: Call stack
+    theory_id: 11550
+  - title: Scopes
+    theory_id: 17116
+  - title: Introduction to Android
+    theory_id: 6331
+  - title: Jumps and returns
+    theory_id: 6165
+  - title: Inheritance
+    theory_id: 9844
+  - title: Inheritance
+    theory_id: 7770
+  - title: Polymorphism
+    theory_id: 10027
+  - title: Overriding functions
+    theory_id: 7884
+  - title: "Synchronous, asynchronous, parallel"
+    theory_id: 9332
+  - title: Processes and threads
+    theory_id: 9420
+  - title: Encapsulation
+    theory_id: 8519
+  - title: Property accessors
+    theory_id: 10511
+  - title: Introduction to generic programming
+    theory_id: 14698
+  - title: Generic functions
+    theory_id: 16052
+  - title: Simultaneous tasks
+    theory_id: 8544
+  - title: XML
+    theory_id: 6901
+  - title: Android Project Structure
+    theory_id: 10752
+  - title: AndroidManifest File
+    theory_id: 10762
+  - title: Resources
+    theory_id: 11087
+  - title: Values
+    theory_id: 11370
+  - title: build.gradle files
+    theory_id: 15053
+  - title: Android Studio Tool Windows
+    theory_id: 15920
+  - title: XML Layouts
+    theory_id: 10997
+  - title: Layout Editor
+    theory_id: 14815
+  - title: Running your app
+    theory_id: 11320
+  - title: "Linear, Frame, Relative layouts"
+    theory_id: 11981
+  - title: Asynchronous programming techniques & problems
+    theory_id: 14503
+  - title: "Text, images, and buttons"
+    theory_id: 12918
+  - title: Toast
+    theory_id: 11973
+  - title: Event listeners
+    theory_id: 12822
+  - title: Intent
+    theory_id: 11965
+  - title: Activity
+    theory_id: 15455
+  - title: What is an exception
+    theory_id: 7243
+  - title: Hierarchy of exceptions
+    theory_id: 13264
+  - title: Taming exceptions
+    theory_id: 7601
+  - title: Null safety
+    theory_id: 7619
+  - title: Thread as object
+    theory_id: 15809
+  1:
+  - title: toString()
+    theory_id: 10193
+  - title: Data class
+    theory_id: 8526
+  - title: Destructuring declarations
+    theory_id: 9047
+  - title: The try-catch statement
+    theory_id: 10622
+  - title: The try-catch-finally statement
+    theory_id: 11809
+  2:
+  - title: Enum
+    theory_id: 6245
+  - title: AlertDialog
+    theory_id: 12330
+  3:
+  - title: PendingIntent
+    theory_id: 12503
+  4:
+  - title: Colors
+    theory_id: 14914
+  - title: Design tips and rules
+    theory_id: 15205
+  - title: The concept of patterns
+    theory_id: 3611
+  - title: Permissions
+    theory_id: 23292
+  - title: Nested and inner classes
+    theory_id: 14723
+  - title: What is a bug
+    theory_id: 5504
+  - title: Introduction to software architecture
+    theory_id: 15368
+  - title: Design principles
+    theory_id: 8956
+  - title: Single Responsibility Principle
+    theory_id: 8963
+  - title: Object declarations
+    theory_id: 10698
+  - title: Introduction to logging
+    theory_id: 5538
+  - title: Debugging techniques
+    theory_id: 13739
+  - title: Debugging overview
+    theory_id: 14368
+  - title: Debugging simple constructs
+    theory_id: 15503
+  - title: Advanced debugger features
+    theory_id: 16028
+  - title: Posting notifications
+    theory_id: 12603
+  - title: Introduction to creational patterns
+    theory_id: 16251
+  - title: Singleton
+    theory_id: 16469

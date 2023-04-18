@@ -1,0 +1,22 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>Although our stopwatch can run pretty much infinitely, what we really want is to track specific time intervals. Let's set up a stopwatch with a user-defined upper limit that can be changed according to the user's needs.</p>
+<p>To add the upper-limit functionality, implement a special pop-up dialog using <a href="https://developer.android.com/reference/android/app/AlertDialog?hl=en" rel="noopener noreferrer nofollow" target="_blank">AlertDialog</a>.</p>
+<h5 id="objectives">Objectives</h5>
+<ol>
+<li>Create a new button with the <code class="java">text</code> attribute <code class="java">Settings</code> and the <code class="java">id</code> attribute <code class="java">settingsButton</code>.</li>
+<li>The <code class="java">settingsButton</code> is enabled only when the stopwatch is <u>not</u> running.</li>
+<li>After the button is clicked, <code class="java">AlertDialog</code> with the following components should appear:
+		<ul>
+<li>EditText with the <code class="java">id</code> attribute <code class="java">upperLimitEditText</code>;</li>
+<li>Default dialog buttons with the <code class="java">text</code> attributes <code class="java">OK</code> and <code class="java">Cancel</code>.</li>
+</ul>
+</li>
+<li>When importing your AlertDialog don't import the androidx version, it won't work with tests</li>
+<li>If there is a number in EditText and the user clicks the <code class="java">OK</code> button, the upper limit is set to that number representing time in seconds. If the user clicks <code class="java">Cancel</code>, the dialog closes.</li>
+<li>After the upper limit is reached, the stopwatch color is changed to red (use the <code class="java">RED</code> constant of the class <code class="java">Color</code>). If the number is not set, then there is no upper limit and the stopwatch behaves as in the previous stage.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p>Here is an example of the updated application workflow:</p>
+<p style="text-align: center;"><img alt="" height="400" src="https://ucarecdn.com/7869e097-6ced-4049-8056-c6dd8811caa2/" width="189"/></p>
+</div>

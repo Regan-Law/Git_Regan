@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="D:\Regan\Git_Regan\Stopwatch with Productivity Timer\Stopwatch with Productivity Timer\task"
+    name=":Stopwatch_with_Productivity_Timer-task"
+    type="APP"
+    maven="Stopwatch with Productivity Timer:Stopwatch_with_Productivity_Timer-task:"
+    gradle="7.0.2"
+    buildFolder="build"
+    bootClassPath="D:\JetBrains\apps\AndroidStudio\SDK\platforms\android-33\android.jar;D:\JetBrains\apps\AndroidStudio\SDK\build-tools\30.0.2\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

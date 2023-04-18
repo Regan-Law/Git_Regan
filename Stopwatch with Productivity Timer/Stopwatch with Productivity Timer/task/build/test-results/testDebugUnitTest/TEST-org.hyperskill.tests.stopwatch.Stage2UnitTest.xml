@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.hyperskill.tests.stopwatch.Stage2UnitTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-04-15T14:34:26" hostname="REGAN-PC" time="6.441">
+  <properties/>
+  <testcase name="checkDisplayOneMinuteInsteadOf60Seconds" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="5.202"/>
+  <testcase name="checkCountOneSecondAfterOneSecondOnStartButtonClick" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="0.186"/>
+  <testcase name="checkStopTimerAndResetCountOnResetButtonClick" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="0.178"/>
+  <testcase name="checkTakeOneSecondToCountOneSecondOnStartButtonClick" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="0.168"/>
+  <testcase name="checkContinueCountOnPressingStartButtonAgain" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="0.164"/>
+  <testcase name="checkIgnorePressingResetButtonAgain" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="0.149"/>
+  <testcase name="checkCheckTimerInitialValue" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="0.132"/>
+  <testcase name="checkMinuteIsNotEarly" classname="org.hyperskill.tests.stopwatch.Stage2UnitTest" time="0.26"/>
+  <system-out><![CDATA[Called loadFromPath(/system/framework/framework-res.apk, true); mode=binary sdk=29
+resources.arsc in APK 'C:\Users\Regan\.m2\repository\org\robolectric\android-all-instrumented\10-robolectric-5803371-i3\android-all-instrumented-10-robolectric-5803371-i3.jar' is compressed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
