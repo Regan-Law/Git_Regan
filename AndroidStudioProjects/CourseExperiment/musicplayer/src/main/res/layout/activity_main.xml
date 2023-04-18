@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
-		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent" xmlns:TODO="http://schemas.android.com/apk/res-auto"
+		android:layout_height="match_parent"
 		android:gravity="center"
 		android:orientation="vertical"
-		TODO:android:background="@drawable/music_bg"
-		tools:context=".MainActivity">
+		android:background="@drawable/music_bg">
 	<RelativeLayout android:layout_width="match_parent" android:layout_height="160dp">
 		<RelativeLayout android:layout_width="300dp" android:layout_height="70dp"
 		                android:id="@+id/rl_title"
 		                android:layout_centerHorizontal="true"
-		                TODO:android:background="@drawable/title_bg"
+		                android:background="@drawable/title_bg"
 		                android:gravity="center_horizontal"
 		                android:paddingStart="80dp">
 			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -52,7 +50,7 @@
 		<LinearLayout android:layout_width="340dp" android:layout_height="90dp"
 		              android:layout_below="@id/rl_title"
 		              android:layout_centerHorizontal="true"
-		              TODO:android:background="@drawable/btn_bg"
+		              android:background="@drawable/btn_bg"
 		              android:gravity="center_vertical"
 		              android:paddingStart="120dp"
 		              android:paddingEnd="10dp">
@@ -90,7 +88,7 @@
 		           android:layout_centerVertical="true"
 		           android:layout_marginStart="35dp"
 		           android:layout_marginBottom="50dp"
-		           TODO:android:src="@drawable/img_music"/>
+		           android:src="@drawable/img_music"/>
 	</RelativeLayout>
 
 </LinearLayout>

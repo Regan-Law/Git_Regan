@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!--    <item>-->
-<!--        <shape android:shape="oval" >-->
-<!--            <gradient android:startColor="#FF00FF19"-->
-<!--                android:centerColor="#8000FF19"-->
-<!--                android:endColor="#00000000"-->
-<!--                android:type="radial"-->
-<!--                android:gradientRadius="180dp"/>-->
-<!--        </shape>-->
-<!--    </item>-->
+    <!--    <item>-->
+    <!--        <shape android:shape="oval" >-->
+    <!--            <gradient android:startColor="#FF00FF19"-->
+    <!--                android:centerColor="#8000FF19"-->
+    <!--                android:endColor="#00000000"-->
+    <!--                android:type="radial"-->
+    <!--                android:gradientRadius="180dp"/>-->
+    <!--        </shape>-->
+    <!--    </item>-->
     <item
         android:gravity="center"
         android:width="380dp"
         android:height="380dp">
-        <bitmap android:src="@drawable/time_back"/>
+        <bitmap android:src="@drawable/green_back"/>
 
     </item>
 
 
-<!--    <item-->
-<!--        android:width="270dp"-->
-<!--        android:height="270dp"-->
-<!--        android:gravity="center">-->
+    <item
+        android:width="270dp"
+        android:height="270dp"
+        android:gravity="center">
 
-<!--        <shape android:shape="oval">-->
-<!--            <solid android:color="?attr/colorPrimaryContainer"/>-->
-<!--            <stroke android:width="3dp"-->
-<!--                android:color="#A0A0A0" />-->
-<!--        </shape>-->
-<!--    </item>-->
+        <shape android:shape="oval">
+            <solid android:color="?attr/colorPrimaryContainer"/>
+            <stroke android:width="3dp"
+                android:color="#A0A0A0" />
+        </shape>
+    </item>
 
 
 

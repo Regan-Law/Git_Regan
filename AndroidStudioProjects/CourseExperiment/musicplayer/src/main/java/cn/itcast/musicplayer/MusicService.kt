@@ -27,7 +27,7 @@ class MusicService : Service() {
 			override fun run() {
 				val duration = player!!.duration
 				val currentPosition = player!!.currentPosition
-				val msg: Message = MainActivity.obtainMessage()
+				val msg: Message = MainActivity.handler.obtainMessage()
 				val bundle = Bundle()
 				bundle.putInt("duration", duration)
 				bundle.putInt("currentPosition", currentPosition)
@@ -64,9 +64,7 @@ class MusicService : Service() {
 	
 	override fun onDestroy() {
 		super.onDestroy()
-		if (player?.isPlaying == true) {
-			player!!.stop()
-		}
+		if (player?.isPlaying == true) player!!.stop()
 		player!!.release()
 		player = null
 	}
