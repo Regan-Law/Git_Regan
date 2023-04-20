@@ -72,9 +72,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.settingsButton.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
-            intent.putExtra("pomodoroTime", vm.pomodoroTimer.pomodoroTime / SECONDS_IN_MINUTES)
-            intent.putExtra("breakTime", vm.pomodoroTimer.breakTime / SECONDS_IN_MINUTES)
-            intent.putExtra("longBreakTime", vm.pomodoroTimer.longBreakTime / SECONDS_IN_MINUTES)
+            intent.putExtra("一个番茄（工作/学习）", vm.pomodoroTimer.pomodoroTime / SECONDS_IN_MINUTES)
+            intent.putExtra("小憩", vm.pomodoroTimer.breakTime / SECONDS_IN_MINUTES)
+            intent.putExtra("休息", vm.pomodoroTimer.longBreakTime / SECONDS_IN_MINUTES)
             startActivity(intent)
         }
 

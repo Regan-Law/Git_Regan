@@ -28,9 +28,9 @@ class SettingsActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         prefs = getSharedPreferences("Settings", Context.MODE_PRIVATE)
-        pomodoroTime = intent.getIntExtra("pomodoroTime", 0)
-        breakTime = intent.getIntExtra("breakTime", 0)
-        longBreakTime = intent.getIntExtra("longBreakTime", 0)
+        pomodoroTime = intent.getIntExtra("一个番茄（工作/学习）", 0)
+        breakTime = intent.getIntExtra("小憩", 0)
+        longBreakTime = intent.getIntExtra("休息", 0)
 
         soundIsOn = prefs.getBoolean("soundIsOn", true)
         vibrateIsOn = prefs.getBoolean("vibrateIsOn", false)
@@ -93,9 +93,9 @@ class SettingsActivity : AppCompatActivity() {
     @SuppressLint("CommitPrefEdits")
     override fun onPause() {
         with(prefs.edit()){
-            putInt("pomodoroTime", pomodoroTime * 60)
-            putInt("breakTime", breakTime * 60)
-            putInt("longBreakTime", longBreakTime * 60)
+            putInt("一个番茄（工作/学习）", pomodoroTime * 60)
+            putInt("小憩", breakTime * 60)
+            putInt("休息", longBreakTime * 60)
 
             putBoolean("soundIsOn", binding.soundSwitch.isChecked)
             putBoolean("vibrateIsOn", binding.vibrateSwitch.isChecked)
