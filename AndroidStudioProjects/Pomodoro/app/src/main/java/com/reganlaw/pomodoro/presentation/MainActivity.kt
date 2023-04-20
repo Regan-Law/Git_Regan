@@ -81,9 +81,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onResume() {
-        val pomodoroTime = prefs.getInt("pomodoroTime", 25 * 60)
-        val breakTime = prefs.getInt("breakTime", 5 * 60)
-        val longBreakTime = prefs.getInt("longBreakTime", 15 * 60)
+        val pomodoroTime = prefs.getInt("一个番茄（工作/学习）", 25 * 60)
+        val breakTime = prefs.getInt("小憩", 5 * 60)
+        val longBreakTime = prefs.getInt("休息", 15 * 60)
 
         soundIsOn = prefs.getBoolean("soundIsOn", soundIsOn)
         vibrateIsOn = prefs.getBoolean("vibrateIsOn", vibrateIsOn)

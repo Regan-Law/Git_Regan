@@ -73,9 +73,9 @@ object TimerRepositoryImpl : TimerRepository {
 
     override fun getTimerMode(pomodoroTimer: PomodoroTimer): String {
         return when (pomodoroTimer.timerMode) {
-            POMODORO_TIME_ID -> "POMODORO ${pomodoroTimer.pomodoroTime / 60} MIN"
-            BREAK_TIME_ID -> "SHORT BREAK ${pomodoroTimer.breakTime / 60} MIN"
-            LONG_BREAK_TIME_ID -> "LONG BREAK ${pomodoroTimer.longBreakTime / 60} MIN"
+            POMODORO_TIME_ID -> "一个番茄（工作/学习） ${pomodoroTimer.pomodoroTime / 60} 分钟"
+            BREAK_TIME_ID -> "小憩 ${pomodoroTimer.breakTime / 60} 分钟"
+            LONG_BREAK_TIME_ID -> "休息 ${pomodoroTimer.longBreakTime / 60} 分钟"
             else -> throw java.lang.RuntimeException("Element $this not found")
         }
     }
