@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/time_text_view"
-        tools:text="一个番茄（20分钟）" />
+        tools:text="一个番茄（25分钟）" />
 
     <ImageView
         android:id="@+id/pomodoro_progress_2"
