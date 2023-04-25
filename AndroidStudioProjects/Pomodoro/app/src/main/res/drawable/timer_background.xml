@@ -14,22 +14,22 @@
         android:gravity="center"
         android:width="380dp"
         android:height="380dp">
-        <bitmap android:src="@drawable/green_back"/>
+        <bitmap android:src="@drawable/bg1"/>
 
     </item>
 
 
-    <item
-        android:width="270dp"
-        android:height="270dp"
-        android:gravity="center">
+<!--    <item-->
+<!--        android:width="270dp"-->
+<!--        android:height="270dp"-->
+<!--        android:gravity="center">-->
 
-        <shape android:shape="oval">
-            <solid android:color="?attr/colorPrimaryContainer"/>
-            <stroke android:width="3dp"
-                android:color="#A0A0A0" />
-        </shape>
-    </item>
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="?attr/colorPrimaryContainer"/>-->
+<!--            <stroke android:width="3dp"-->
+<!--                android:color="#A0A0A0" />-->
+<!--        </shape>-->
+<!--    </item>-->
 
 
 
