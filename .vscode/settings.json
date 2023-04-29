@@ -1,12 +1,21 @@
 {
-    "python.analysis.typeCheckingMode": "basic",
-    "cSpell.words": [
-        "bufferover",
-        "bufferread",
-        "bufferwrite",
-        "Filereadandwrite",
-        "overpath",
-        "readpath",
-        "writepath"
-    ]
+	"python.analysis.typeCheckingMode": "basic",
+	"cSpell.words": [
+		"androidx",
+		"appcompat",
+		"bufferover",
+		"bufferread",
+		"bufferwrite",
+		"Compat",
+		"databinding",
+		"Filereadandwrite",
+		"koin",
+		"lateinit",
+		"millis",
+		"overpath",
+		"readpath",
+		"reganlaw",
+		"viewmodel",
+		"writepath"
+	]
 }
