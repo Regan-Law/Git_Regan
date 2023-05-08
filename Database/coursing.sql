@@ -18,7 +18,7 @@
 --    end loop;
 --    close our_all_goods;
 --end;
-set serveroutput on
+--set serveroutput on
 
 declare
     cursor cur_goods(tid goods.g_id%type) is

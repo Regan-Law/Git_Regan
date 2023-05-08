@@ -213,3 +213,99 @@ from
     courseselc;
 
 --创建一个视图，其中包含emp表的员工编号、员工姓名、职位、雇用日期、部门编号
+create or replace view emp_view as
+    select
+        empno    员工编号,
+        ename    员工姓名,
+        job      职位,
+        hiredate 雇用日期,
+        deptno   部门编号
+    from
+        emp;
+
+--查看视图的结构
+desc emp_view;
+
+--从视图中查询数据
+select
+    *
+from
+    emp_view;
+
+--查看视图中各字段的可更新性
+select
+    column_name,
+    updatable
+from
+    user_updatable_columns
+where
+    table_name='EMP_VIEW';
+
+--向视图中增加一条数据
+insert into emp_view values(
+    1000,
+    '张三',
+    'SALESMAN',
+    to_date('2018-01-01', 'yyyy-mm-dd'),
+    30
+);
+
+--利用视图更新一条数据
+update emp_view
+set
+    员工姓名='李四'
+where
+    员工编号=1000;
+
+--利用视图删除一条数据
+delete from emp_view
+where
+    员工编号=1000;
+
+--创建一个视图，包含empno, ename, dname
+create or replace view emp_dept_view as
+    select
+        e.empno,
+        e.ename,
+        d.dname
+    from
+        emp  e,
+        dept d
+    where
+        e.deptno=d.deptno;
+
+select
+    *
+from
+    emp_dept_view;
+
+--在dept表的dname列上创建一个唯一索引
+create unique index dname_index on dept(
+    dname
+);
+
+--在emp表的job列创建一个位图索引
+create bitmap index job_index on emp(
+    job
+);
+
+--在emp表的ename列上创建一个非唯一b树索引idx_ename
+create index idx_ename on emp(
+    ename
+);
+
+--在emp表的deptno和job列上创建复合索引
+create index idx_deptno_job on emp(
+    deptno,
+    job
+);
+
+--打开set autotrace on，写一条用到索引的select语句
+set autotrace on;
+
+select
+    *
+from
+    emp
+where
+    job='SALESMAN';
