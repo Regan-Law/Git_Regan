@@ -37,3 +37,76 @@ begin
             ||rec_goods.g_price);
     end loop;
 end;
+/
+
+set serveroutput on
+
+declare
+    pempno  number;
+    yearsal number;
+begin
+    pempno:=7369;
+    yearsal:=getyearsal(pempno);
+    dbms_output.put_line(yearsal);
+end;
+/
+
+--创建函数，查询姓名为james的员工的年薪
+create or replace function getyearsal(
+    pempno in number
+) return number is
+    v_yearsal number;
+begin
+    select
+        sal*12 into v_yearsal
+    from
+        emp
+    where
+        empno = pempno;
+    return v_yearsal;
+end;
+/
+
+--调用函数
+declare
+    pempno  number;
+    yearsal number;
+begin
+    pempno:=7369;
+    yearsal:=getyearsal(pempno);
+    dbms_output.put_line(yearsal);
+end;
+/
+
+--创建函数，查询姓名为james的员工的员工编号，职位，月薪，返回多个值
+create or replace function getemp(
+    pempno in number
+) return emp%rowtype is
+    v_emp emp%rowtype;
+begin
+    select
+        * into v_emp
+    from
+        emp
+    where
+        empno = pempno;
+    return v_emp;
+end;
+/
+
+--调用函数
+declare
+    pempno number;
+    v_emp  emp%rowtype;
+begin
+    pempno:=7369;
+    v_emp:=getemp(pempno);
+    dbms_output.put_line(v_emp.empno
+        ||' '
+        ||v_emp.ename
+        ||' '
+        ||v_emp.job
+        ||' '
+        ||v_emp.sal);
+end;
+/
