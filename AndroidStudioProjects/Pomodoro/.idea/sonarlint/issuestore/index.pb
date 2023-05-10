@@ -5,8 +5,6 @@
 Kapp/src/main/java/com/reganlaw/pomodoro/domain/AddPomodoroCounterUseCase.kt,4\f\4f8765608409dc711820e113b86c4fef5537d28b
 x
 Happ/src/main/java/com/reganlaw/pomodoro/domain/ChangeTimerModeUseCase.kt,6\4\64997803ee3cb2c7ac25638f4f825d2341389ea5
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 o
@@ -23,7 +21,9 @@ s
 Capp/src/main/java/com/reganlaw/pomodoro/data/TimerRepositoryImpl.kt,0\f\0f40e160c7d378faae041078f2072c98e8e6da1a
 u
 Eapp/src/main/java/com/reganlaw/pomodoro/presentation/MainViewModel.kt,a\3\a3e38920437ba94fcf1a36003d79b3b5ffe03a3e
-t
-Dapp/src/main/java/com/reganlaw/pomodoro/presentation/MainActivity.kt,9\d\9ddfcd866a0e52f8836008f1c2ab99ca438198fe
 x
 Happ/src/main/java/com/reganlaw/pomodoro/presentation/SettingsActivity.kt,5\c\5c6c84dcde153264af4f14e83ed07aec6427a793
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+t
+Dapp/src/main/java/com/reganlaw/pomodoro/presentation/MainActivity.kt,9\d\9ddfcd866a0e52f8836008f1c2ab99ca438198fe

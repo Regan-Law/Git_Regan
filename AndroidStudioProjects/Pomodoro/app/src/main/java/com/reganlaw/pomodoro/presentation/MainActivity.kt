@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private var timerIsWorking = false
     private lateinit var timer: CountDownTimer//创建一个 CountDownTimer 对象，并将其存储在名为 timer 的变量中
     private lateinit var prefs: SharedPreferences//创建一个 SharedPreferences 对象，并将其存储在名为 prefs 的变量中
+    private lateinit var mediaPlayer: MediaPlayer//创建一个 MediaPlayer 对象，并将其存储在名为 mediaPlayer 的变量中
 
     private var soundIsOn = true
     private var vibrateIsOn = false
@@ -67,7 +68,6 @@ class MainActivity : AppCompatActivity() {
             changeButtonsWhenTimerNotWorking()//更改按钮
             setInvisibleResetButton()//设置不可见的重置按钮
             timer = initTimer()//初始化计时器
-
         }
 
         binding.settingsButton.setOnClickListener {
@@ -101,7 +101,6 @@ class MainActivity : AppCompatActivity() {
         vm.pomodoroTimer.longBreakTime = longBreakTime//设置长时间休息
         vm.setGeneralTime(vm.pomodoroTimer)//设置总时间
 
-
         refreshValuesOnTextViews()//刷新文本视图上的值
         super.onResume()//调用父类的 onResume 方法
     }
@@ -114,7 +113,6 @@ class MainActivity : AppCompatActivity() {
             override fun onTick(millisUntilFinished: Long) {//每次计时器间隔时调用
                 vm.pomodoroTimer.time = (millisUntilFinished / MILLISECONDS_IN_SECONDS).toInt()//将时间设置为剩余时间
                 binding.timeTextView.text = formatTime(vm.pomodoroTimer.time)//格式化时间
-
             }
 
 
@@ -200,10 +198,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun playSong() {
-        val mediaPlayer = MediaPlayer.create(applicationContext, R.raw.daydream) //创建一个 MediaPlayer 对象
+        mediaPlayer = MediaPlayer.create(applicationContext, R.raw.daydream) //创建一个 MediaPlayer 对象
         mediaPlayer.start() //播放音乐
     }
-
 
     private fun vibrate() {
 
