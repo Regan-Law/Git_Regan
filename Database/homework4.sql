@@ -1,12 +1,12 @@
 --从emp表中找出30号部门人数和工资总和
 create or replace procedure count_emp1 as
-    sal_sum   number;
     count_emp number;
+    sal_sum   number;
 begin
     select
         count(*),
-        sum(sal) into sal_sum,
-        count_emp
+        sum(sal) into count_emp,
+        sal_sum
     from
         emp
     where
@@ -22,13 +22,13 @@ end;
 create or replace procedure count_emp2(
     deptno in emp.deptno%type
 ) as
-    sal_sum   number;
     count_emp number;
+    sal_sum   number;
 begin
     select
         count(*),
-        sum(sal) into sal_sum,
-        count_emp
+        sum(sal) into count_emp,
+        sal_sum
     from
         emp
     where
@@ -51,8 +51,8 @@ create or replace procedure count_emp3(
 begin
     select
         count(*),
-        sum(sal) into sal_sum,
-        count_emp
+        sum(sal) into count_emp,
+        sal_sum
     from
         emp
     where
