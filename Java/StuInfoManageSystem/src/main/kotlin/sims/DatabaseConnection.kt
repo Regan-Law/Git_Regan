@@ -17,19 +17,6 @@ object DatabaseConnection {
 		return conn
 	}
 	
-	@Throws(Exception::class)
-	fun close(rs: ResultSet?, statement: PreparedStatement?, conn: Connection?) {
-		rs?.close()
-		statement?.close()
-		conn?.close()
-	}
-	
-	@Throws(Exception::class)
-	fun close(statement: PreparedStatement?, conn: Connection?) {
-		statement?.close()
-		conn?.close()
-	}
-	
 	@JvmStatic
 	@Throws(Exception::class)
 	fun close(conn: Connection?) {
