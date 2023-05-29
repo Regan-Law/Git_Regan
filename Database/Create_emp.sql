@@ -134,7 +134,7 @@ insert into emp values(
     'SCOTT',
     'ANALYST',
     7566,
-    to_date('13-JUL-87', 'dd-mm-rr') - 85,
+    to_date('13-7-1987', 'dd-mm-yyyy'),
     3000,
     null,
     20
@@ -167,7 +167,7 @@ insert into emp values(
     'ADAMS',
     'CLERK',
     7788,
-    to_date('13-JUL-87', 'dd-mm-rr') - 51,
+    to_date('13-7-1987', 'dd-mm-yyyy'),
     1100,
     null,
     20
