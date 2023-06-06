@@ -67,7 +67,7 @@ create table diffsal(
     last3_sal number(10, 2)
 );
 
---根据diffsal表，创建触发器，实现如下内容：如果调整emp表中的工资，便级联更新diffsal表中avgsal列中的值
+--根据diffsal表，创建触发器，实现如下内容：如果调整emp表中的工资便级联更新diffsal表中avgsal列中的值
 create or replace trigger emp_diffsal_update before
     update on emp
 begin
