@@ -2,6 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="CourseDesgin" target="1.8" />
+      <module name="CourseDesgin.main" target="1.8" />
+      <module name="CourseDesgin.test" target="1.8" />
+      <module name="CourseDesign" target="1.8" />
+      <module name="CourseDesign.main" target="1.8" />
+      <module name="CourseDesign.test" target="1.8" />
       <module name="Experiment3" target="17" />
       <module name="Experiment3.main" target="17" />
       <module name="Experiment3.test" target="17" />

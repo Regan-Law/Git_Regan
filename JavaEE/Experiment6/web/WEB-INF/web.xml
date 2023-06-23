@@ -5,6 +5,7 @@
          version="6.0">
 	<welcome-file-list>
 		<welcome-file>login.jsp</welcome-file>
+		<welcome-file>login.html</welcome-file>
 	</welcome-file-list>
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>

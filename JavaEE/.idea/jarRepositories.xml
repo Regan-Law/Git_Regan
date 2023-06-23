@@ -16,5 +16,35 @@
       <option name="name" value="MavenRepo" />
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="aliyunGradlePlugin" />
+      <option name="name" value="aliyunGradlePlugin" />
+      <option name="url" value="https://maven.aliyun.com/repository/gradle-plugin" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="aliyunPublic" />
+      <option name="name" value="aliyunPublic" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenLocal" />
+      <option name="name" value="MavenLocal" />
+      <option name="url" value="file:/$MAVEN_REPOSITORY$/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="aliyunJcenter" />
+      <option name="name" value="aliyunJcenter" />
+      <option name="url" value="https://maven.aliyun.com/repository/jcenter" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="aliyunGoogle" />
+      <option name="name" value="aliyunGoogle" />
+      <option name="url" value="https://maven.aliyun.com/repository/google" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="aliyunCentral" />
+      <option name="name" value="aliyunCentral" />
+      <option name="url" value="https://maven.aliyun.com/repository/central" />
+    </remote-repository>
   </component>
 </project>
