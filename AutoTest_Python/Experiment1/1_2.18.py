@@ -55,12 +55,13 @@ print(all([0, 1, 2]))  # 元素0为False,返回结果为False
 print(all(['a', 'b', '']))  # 元素空字符串为False,返回结果为False
 print(all(()))  # 空元组,返回True
 print(all([]))  # 空列表,返回 True
-print(all({})) #空字典，返回 True
+print(all({}))  # 空字典，返回 True
 
-s=" hello selenium "
+s = " hello selenium "
 s.strip()
 s.lstrip()
 s.rstrip()
 
 import os
-realpath=os.path.split(os.path.realpath((__file__))[0]
+
+realpath = os.path.split(os.path.realpath((__file__))[0])
