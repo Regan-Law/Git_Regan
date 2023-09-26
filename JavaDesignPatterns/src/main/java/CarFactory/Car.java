@@ -1,8 +1,5 @@
 package CarFactory;
 
-public abstract class Car extends client{
-    public void run(){
-    }
-
-    ;
+public interface Car{
+    void run();
 }

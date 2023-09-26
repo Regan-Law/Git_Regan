@@ -1,8 +1,8 @@
 package ImageReader;
 
-public class GifReader extends ImageReader{
+public class GifReader implements ImageReader{
     @Override
     public void readImage(){
-        System.out.println("Reading GIF image");
+        System.out.println("GIF image");
     }
 }

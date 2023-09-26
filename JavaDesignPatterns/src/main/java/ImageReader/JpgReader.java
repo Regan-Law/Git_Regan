@@ -1,8 +1,8 @@
 package ImageReader;
 
-public class JpgReader extends ImageReader{
+public class JpgReader implements ImageReader{
     @Override
     public void readImage(){
-        System.out.println("Reading JPG image");
+        System.out.println("JPG image");
     }
 }

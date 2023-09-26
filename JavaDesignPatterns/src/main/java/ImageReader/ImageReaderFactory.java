@@ -7,7 +7,7 @@ public class ImageReaderFactory{
         }else if(imageType.equalsIgnoreCase("JPG")){
             return new JpgReader();
         }else{
-            throw new IllegalArgumentException("Unsupported image type");
+            throw new IllegalArgumentException("Unknown type");
         }
     }
 }

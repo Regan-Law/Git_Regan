@@ -1,8 +1,7 @@
 package CarFactory;
 
-public class BMWFactory extends CarFactory{
+public class BMWFactory implements CarFactory{
     public Car manufactureCar(){
-        Car car=new BMW();
-        return car;
+        return new BMW();
     }
 }
