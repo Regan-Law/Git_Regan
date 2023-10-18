@@ -14,7 +14,7 @@ def clear_report():
 
 def generate_report(report_path):
 	# 生成测试报告
-	command = f"allure generate {report_path} -o {report_path}/html"
+	command = f"allure generate {report_path} -o {report_path}/html --clean"
 	subprocess.call(command, shell=True)
 
 if __name__ == '__main__':
