@@ -1,0 +1,6 @@
+﻿  winclient.cpp
+D:\Regan\Github\Git_Regan\Network_C++\Client\Client\winclient.cpp(53,38): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Regan\Github\Git_Regan\Network_C++\Client\Client\winclient.cpp(76,38): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Regan\Github\Git_Regan\Network_C++\Client\Client\winclient.cpp(38,33): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+D:\Regan\Github\Git_Regan\Network_C++\Client\Client\winclient.cpp(51,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Client.vcxproj -> D:\Regan\Github\Git_Regan\Network_C++\Service\x64\Debug\Client.exe
