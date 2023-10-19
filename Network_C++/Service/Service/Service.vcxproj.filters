@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="winservice.cpp">
+    <ClCompile Include="winserver.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
