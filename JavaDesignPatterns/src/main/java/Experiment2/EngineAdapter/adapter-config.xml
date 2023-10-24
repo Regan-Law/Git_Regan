@@ -1,0 +1,8 @@
+<config>
+	<adapter>
+		<class>Experiment2.EngineAdapter.EngineAdapter</class>
+		<engine>
+			<class>Experiment2.EngineAdapter.SolarEngine</class>
+		</engine>
+	</adapter>
+</config>
