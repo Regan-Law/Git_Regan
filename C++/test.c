@@ -1,11 +1,13 @@
 #include "stdio.h"
-#define N 5
-void main()
+int main()
 {
-    int a[N];
-    int *p=a;
-    while(p<a+N)
-        scanf("%d",p++);
-    while(p>a)
-        printf("%d",*(--p));
+    int y=2,a=1;
+    while(y--!=-1){
+        do{
+            a*=y;
+            a++;
+        }while(y--);
+    }
+    printf("%d,%d",a,y);
+    return 0;
 }
