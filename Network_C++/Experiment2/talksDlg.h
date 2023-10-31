@@ -51,11 +51,12 @@ protected:
 	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
-	afx_msg void OnButtonListen();
-	afx_msg void OnButtonClose();
-	afx_msg void OnSendMsg();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedButtonListen();
+	afx_msg void OnBnClickedButtonClose();
+	afx_msg void OnBnClickedButtonSend();
 };
 
 //{{AFX_INSERT_LOCATION}}

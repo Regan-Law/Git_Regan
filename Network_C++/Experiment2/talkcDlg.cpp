@@ -20,14 +20,14 @@ class CAboutDlg : public CDialog
 public:
 	CAboutDlg();
 
-	// Dialog Data
-		//{{AFX_DATA(CAboutDlg)
+// Dialog Data
+	//{{AFX_DATA(CAboutDlg)
 	enum { IDD = IDD_ABOUTBOX };
 	//}}AFX_DATA
 
 	// ClassWizard generated virtual function overrides
 	//{{AFX_VIRTUAL(CAboutDlg)
-protected:
+	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 	//}}AFX_VIRTUAL
 
@@ -90,9 +90,9 @@ BEGIN_MESSAGE_MAP(CTalkcDlg, CDialog)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDC_BUTTON_CONNECT, OnButtonConnect)
-	ON_BN_CLICKED(IDOK, OnSendMsg)
-	ON_BN_CLICKED(IDC_BUTTON_CLOSE, OnButtonClose)
+	ON_BN_CLICKED(IDC_BUTTON_CONNECT, &CTalkcDlg::OnBnClickedButtonConnect)
+	ON_BN_CLICKED(IDC_BUTTON_CLOSE, &CTalkcDlg::OnBnClickedButtonClose)
+	ON_BN_CLICKED(ID_BUTTON_SEND, &CTalkcDlg::OnBnClickedButtonSend)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -125,11 +125,11 @@ BOOL CTalkcDlg::OnInitDialog()
 	//  when the application's main window is not a dialog
 	SetIcon(m_hIcon, TRUE);			// Set big icon
 	SetIcon(m_hIcon, FALSE);		// Set small icon
-
+	
 	// TODO: Add extra initialization here
 		//initialize the control variables
-	m_strServName = "127.0.0.1";//server name=localhost
-	m_nServPort = SERV_PORT;//server port=1000
+	m_strServName="127.0.0.1";//server name=127.0.0.1
+	m_nServPort=SERV_PORT;//server port=SERV_PORT
 	UpdateData(FALSE);
 	//set socket dialog pointers，
 	m_sConnectSocket.SetParent(this);
@@ -154,13 +154,13 @@ void CTalkcDlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  to draw the icon.  For MFC applications using the document/view model,
 //  this is automatically done for you by the framework.
 
-void CTalkcDlg::OnPaint()
+void CTalkcDlg::OnPaint() 
 {
 	if (IsIconic())
 	{
 		CPaintDC dc(this); // device context for painting
 
-		SendMessage(WM_ICONERASEBKGND, (WPARAM)dc.GetSafeHdc(), 0);
+		SendMessage(WM_ICONERASEBKGND, (WPARAM) dc.GetSafeHdc(), 0);
 
 		// Center icon in client rectangle
 		int cxIcon = GetSystemMetrics(SM_CXICON);
@@ -183,10 +183,10 @@ void CTalkcDlg::OnPaint()
 //  the minimized window.
 HCURSOR CTalkcDlg::OnQueryDragIcon()
 {
-	return (HCURSOR)m_hIcon;
+	return (HCURSOR) m_hIcon;
 }
 
-void CTalkcDlg::OnButtonConnect()
+void CTalkcDlg::OnBnClickedButtonConnect()
 {
 	//retrieve data from dialog
 	UpdateData(TRUE);
@@ -202,7 +202,14 @@ void CTalkcDlg::OnButtonConnect()
 	m_sConnectSocket.Connect(m_strServName, m_nServPort);
 }
 
-void CTalkcDlg::OnSendMsg()
+
+void CTalkcDlg::OnBnClickedButtonClose()
+{
+	OnClose();
+}
+
+
+void CTalkcDlg::OnBnClickedButtonSend()
 {
 	int nLen;//length of message
 	int nSent;//length of message been sent
@@ -235,30 +242,24 @@ void CTalkcDlg::OnSendMsg()
 	}
 }
 
-void CTalkcDlg::OnButtonClose()
-{
-	//call the OnClose function
-	OnClose();
-}
-
 void CTalkcDlg::OnReceive()
 {
-	char* pBuf = new char[1025];
-	int nBufSize = 1024;
+	char *pBuf=new char[1025];
+	int nBufSize=1024;
 	int nReceived;
 	CString strReceived;
 
 	m_listReceived.AddString("客户机收到了OnReceive消息");
-
+	
 	//receive the message
-	nReceived = m_sConnectSocket.Receive(pBuf, nBufSize);
+	nReceived=m_sConnectSocket.Receive(pBuf,nBufSize);
 	//receive successfully?
-	if (nReceived != SOCKET_ERROR)
+	if (nReceived!=SOCKET_ERROR)
 	{
 		//truncate the end of the message
-		pBuf[nReceived] = NULL;
+		pBuf[nReceived]=NULL;
 		//copy the message to a CString
-		strReceived = pBuf;
+		strReceived=pBuf;
 		//add the message to the received list box
 		m_listReceived.AddString(strReceived);
 		//Update the dialog
@@ -266,7 +267,7 @@ void CTalkcDlg::OnReceive()
 	}
 	else
 	{
-		AfxMessageBox("信息接收错误！", MB_OK | MB_ICONSTOP);
+		AfxMessageBox("信息接收错误！",MB_OK|MB_ICONSTOP);
 	}
 }
 
@@ -275,7 +276,7 @@ void CTalkcDlg::OnConnect()
 	//to client
 	//enable the text and message controls
 	GetDlgItem(IDC_EDIT_MSG)->EnableWindow(TRUE);
-	GetDlgItem(IDOK)->EnableWindow(TRUE);//botton send
+	GetDlgItem(ID_BUTTON_SEND)->EnableWindow(TRUE);//botton send
 	GetDlgItem(IDC_STATIC_MSG)->EnableWindow(TRUE);
 	//close botton ready,only to client
 	GetDlgItem(IDC_BUTTON_CLOSE)->EnableWindow(TRUE);
@@ -288,19 +289,21 @@ void CTalkcDlg::OnClose()
 	m_sConnectSocket.Close();
 	//disable the message sending controls
 	GetDlgItem(IDC_EDIT_MSG)->EnableWindow(FALSE);
-	GetDlgItem(IDOK)->EnableWindow(FALSE);//botton send
+	GetDlgItem(ID_BUTTON_SEND)->EnableWindow(FALSE);//botton send
 	GetDlgItem(IDC_STATIC_MSG)->EnableWindow(FALSE);
 	GetDlgItem(IDC_BUTTON_CLOSE)->EnableWindow(FALSE);
 	//clear the list boxes
-	while (m_listSent.GetCount() != 0)
+	while (m_listSent.GetCount()!=0)
 		m_listSent.DeleteString(0);
-	while (m_listReceived.GetCount() != 0)
+	while (m_listReceived.GetCount()!=0)
 		m_listReceived.DeleteString(0);
 	//client?
 		//to client,enable the connection configration controls
-	GetDlgItem(IDC_BUTTON_CONNECT)->EnableWindow(TRUE);
-	GetDlgItem(IDC_EDIT_SERVNAME)->EnableWindow(TRUE);
-	GetDlgItem(IDC_EDIT_SERVPORT)->EnableWindow(TRUE);
-	GetDlgItem(IDC_STATIC_SERVNAME)->EnableWindow(TRUE);
-	GetDlgItem(IDC_STATIC_SERVPORT)->EnableWindow(TRUE);
+		GetDlgItem(IDC_BUTTON_CONNECT)->EnableWindow(TRUE);
+		GetDlgItem(IDC_EDIT_SERVNAME)->EnableWindow(TRUE);
+		GetDlgItem(IDC_EDIT_SERVPORT)->EnableWindow(TRUE);
+		GetDlgItem(IDC_STATIC_SERVNAME)->EnableWindow(TRUE);
+		GetDlgItem(IDC_STATIC_SERVPORT)->EnableWindow(TRUE);
 }
+
+

@@ -1,13 +1,9 @@
 #include "stdio.h"
+#include "string.h"
 int main()
 {
-    int y=2,a=1;
-    while(y--!=-1){
-        do{
-            a*=y;
-            a++;
-        }while(y--);
-    }
-    printf("%d,%d",a,y);
+    char c[]="\t\v\\\0\will\n";
+    char b[]="fegweg\0wefnlwefj";
+    printf("%llu,%llu",strlen(c), strlen(b));
     return 0;
 }
