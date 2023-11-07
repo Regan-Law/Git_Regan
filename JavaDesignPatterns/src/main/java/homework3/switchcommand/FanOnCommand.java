@@ -1,4 +1,4 @@
-package switchcommand;
+package homework3.switchcommand;
 
 public class FanOnCommand implements Command{
     private Fan fan;

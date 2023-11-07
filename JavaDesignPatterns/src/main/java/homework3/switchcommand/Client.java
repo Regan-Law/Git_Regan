@@ -1,4 +1,4 @@
-package switchcommand;
+package homework3.switchcommand;
 
 public class Client{
     public static void main(String[] args){

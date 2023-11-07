@@ -1,4 +1,4 @@
-package remotecontroliterator;
+package homework3.remotecontroliterator;
 
 public interface ChannelIterator{
     boolean hasNext();

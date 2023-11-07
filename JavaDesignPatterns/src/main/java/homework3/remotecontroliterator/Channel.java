@@ -1,4 +1,4 @@
-package remotecontroliterator;
+package homework3.remotecontroliterator;
 
 public class Channel{
     private String name;
