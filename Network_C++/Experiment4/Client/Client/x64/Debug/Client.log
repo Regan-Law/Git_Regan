@@ -1,0 +1,4 @@
+﻿  winclient.cpp
+D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Client\Client\winclient.cpp(59,38): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Client\Client\winclient.cpp(39,33): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  Client.vcxproj -> D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Service\x64\Debug\Client.exe

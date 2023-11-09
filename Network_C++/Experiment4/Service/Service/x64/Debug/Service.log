@@ -1,0 +1,7 @@
+﻿  winserver.cpp
+D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Service\Service\winserver.cpp(14,53): warning C4229: 使用了记时错误: 忽略数据上的修饰符
+D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Service\Service\winserver.cpp(33,45): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Service\Service\winserver.cpp(110,135): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Service\Service\winserver.cpp(113,59): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Service\Service\winserver.cpp(97,10): warning C4101: “recvData”: 未引用的局部变量
+  Service.vcxproj -> D:\Regan\OneDrive\桌面\网络编程技术\Experiment\Experiment4\Service\x64\Debug\Service.exe
